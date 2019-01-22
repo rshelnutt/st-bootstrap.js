@@ -2,15 +2,16 @@
 Speartek Bootstrap Framework
 
 1. [Requirements](#requirements)
-2. [Config](#config)
-3. [Structure](#structure)
-  - [Includes](#structure-includes)
-  - [Content Blocks](#structure-blocks)
-4. [Navigation](#navigation)
-  - [Main Menu](#navigation-main)
+2. [Installation](#installation)
+3. [Config](#config)
+4. [Structure](#structure)
+  - [Includes](#includes)
+  - [Content Blocks](#content-blocks)
+5. [Navigation](#navigation)
+  - [Main Menu](#main-menu)
   - [Slideout Menu (Mobile)](#navigation-slideout)
   - [Footer](#navigation-footer)
-5. [Page Elements](#page-elements)
+6. [Page Elements](#page-elements)
   - [Top Bar](#elements-topbar)
   - [Hero](#elements-hero)
   - [Slider](#elements-slider)
@@ -24,4 +25,13 @@ Speartek Bootstrap Framework
 - FontAwesome 5.6.3+
 - Ionicons 4.3+
 
+## Installation
+
 ## Config
+
+## Structure
+
+## Navigation
+##### Main Menu
+##### Slideout Menu (Mobile)
+##### Footer
