@@ -1,6 +1,6 @@
 # st-bootstrap
 Speartek Bootstrap Framework
-<div class="sidebar">
+
 1. [Requirements](#requirements)
 2. [Installation](#installation)
 3. [Config](#config)
@@ -15,7 +15,6 @@ Speartek Bootstrap Framework
   - [Top Bar](#top-bar)
   - [Hero](#hero)
   - [Slider](#slider)
-</div>
 
 ## Requirements
 - Speartek 723
