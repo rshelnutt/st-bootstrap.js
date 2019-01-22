@@ -57,11 +57,12 @@
 '---------------------------------------
 ' Menu Settings
 '---------------------------------------
-    dim cfgSubBar, cfgMenuCustom, cfgNavCenterLink
+    dim cfgSubBar, cfgMenuCustom, cfgNavCenterLink, cfgSlideMenu
 
     cfgSubBar        = "false" 'boolean
     cfgMenuCustom    = "false" 'boolean
     cfgNavCenterLink = "true" 'boolean
+    cfgSlideMenu     = "true" 'boolean
 
 '---------------------------------------
 ' Top Bar Settings
