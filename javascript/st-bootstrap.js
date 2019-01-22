@@ -19,7 +19,7 @@ $('.container-cell').each(function () {
 var bsLogin = $('#bootLogin').find('iframe');
 bsLogin[0].contentWindow.location = '/blank.html';
 
-$('#bootLogin').on('show.bs.modal', function (e) {
+$('#bootLogin').on('show.bs.modal', function () {
     bsLogin.attr('src', '../' + stappConfig.cfgLoginModal + '/sign-in-modal.htm');
 });
 
