@@ -10,11 +10,11 @@ Speartek Bootstrap Framework
 5. [Navigation](#navigation)
   - [Main Menu](#main-menu)
   - [Slideout Menu (Mobile)](#slideout-menu-mobile)
-  - [Footer](#navigation-footer)
+  - [Footer](#footer)
 6. [Page Elements](#page-elements)
-  - [Top Bar](#elements-topbar)
-  - [Hero](#elements-hero)
-  - [Slider](#elements-slider)
+  - [Top Bar](#top-bar)
+  - [Hero](#hero)
+  - [Slider](#slider)
 
 ## Requirements
 - Speartek 723
@@ -30,8 +30,15 @@ Speartek Bootstrap Framework
 ## Config
 
 ## Structure
+#### Includes
+#### Content Blocks
 
 ## Navigation
 #### Main Menu
 #### Slideout Menu (Mobile)
 #### Footer
+
+## Page Elements
+#### Top Bar
+#### Hero
+#### Slider
