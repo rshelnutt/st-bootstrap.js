@@ -1,3 +1,7 @@
+<a href="#" id="back-to-top" title="Back to top">
+  <i class="fa fa-angle-up"></i>
+</a>
+
 <!-- BEGIN GOOGLE ANALYTICS CODE -->
 <script type="text/javascript">
   var GoogleTrackAccount = 'UA-0000000-0';
@@ -8,7 +12,7 @@
 <!-- END GOOGLE ANALYTICS CODE -->
 
 <form name="LogoutForm" id="LogoutForm" method="post">
-  <input type="hidden" id="Logoff" name="Logoff" value="Logoff">
+    <input type="hidden" id="Logoff" name="Logoff" value="Logoff">
 </form>
 
 <div class="modal fade" id="bootLogin" tabindex="-1" role="dialog" aria-labelledby="bootLogin" aria-hidden="true">
@@ -28,18 +32,18 @@
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
 <![endif]-->
 
-<script type="text/javascript">Array.prototype.push=ArrayPushNativeCode;</script>
+<script>Array.prototype.push=ArrayPushNativeCode;</script>
 
 <!--Bootstrap-->
-<script type="text/javascript" src="/dsn/<%=ChildDSN%>/Content/Javascripts/st-bootstrap.js?v=0.5"></script>
+<script src="/dsn/<%=ChildDSN%>/Content/Javascripts/st-bootstrap.js?v=1"></script>
 
 <!--Site Core Functions-->
-<script type="text/javascript" src="/dsn/<%=ChildDSN%>/Content/Javascripts/site-core.js?v=0.2"></script>
+<script src="/dsn/<%=ChildDSN%>/Content/Javascripts/site-core.js?v=1"></script>
 
 <!--Perfect Scroll-->
 <script src="../st-app/lib/perfect-scrollbar/perfect-scrollbar-1.4.0.min.js"></script>
