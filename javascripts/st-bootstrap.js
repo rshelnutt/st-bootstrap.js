@@ -766,8 +766,6 @@ function setFullwidth() {
 // Construct hero fullscreen
 function heroFullcreen() {
     if ($('.hero.fullscreen').length) {
-        // var navHeightSet = $('.hero.fullscreen').offset().top;
-        console.log($('#header').outerHeight())
         var navHeightSet = $('#header').outerHeight();
         var navHeight = Math.ceil((navHeightSet + 1) * -1);
         $('.hero-stage').css('marginTop', navHeight);

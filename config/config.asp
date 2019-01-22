@@ -16,7 +16,7 @@
     cfgBrand       = "otg-logo-original.svg" 'string [imagename.png, jpg, gif, svg]
     cfgBrandWidth  = "135px" 'int + px, %, em, rem
     cfgBrandPos    = "left" 'string [left right center menuLeft menuRight menuCenter none]
-    cfgSidebar     = "left" 'string [left right none]
+    cfgSidebar     = "none" 'string [left right none]
     cfgFeatured    = "2" 'int
     cfgYMAL        = "false" 'boolean
 
@@ -62,7 +62,7 @@
     cfgSubBar        = "false" 'boolean
     cfgMenuCustom    = "false" 'boolean
     cfgNavCenterLink = "true" 'boolean
-    cfgSlideMenu     = "true" 'boolean
+    cfgSlideMenu     = "false" 'boolean
 
 '---------------------------------------
 ' Top Bar Settings
