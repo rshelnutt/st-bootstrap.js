@@ -1,2 +1,2 @@
 # Site Configuration 
-Speartek Bootstrap Framework
+Speartek Bootstrap Configuration
