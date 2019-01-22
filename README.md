@@ -9,7 +9,7 @@ Speartek Bootstrap Framework
   - [Content Blocks](#content-blocks)
 5. [Navigation](#navigation)
   - [Main Menu](#main-menu)
-  - [Slideout Menu (Mobile)](#navigation-slideout)
+  - [Slideout Menu (Mobile)](#slideout-menu-mobile)
   - [Footer](#navigation-footer)
 6. [Page Elements](#page-elements)
   - [Top Bar](#elements-topbar)
@@ -32,6 +32,6 @@ Speartek Bootstrap Framework
 ## Structure
 
 ## Navigation
-##### Main Menu
-##### Slideout Menu (Mobile)
-##### Footer
+#### Main Menu
+#### Slideout Menu (Mobile)
+#### Footer
