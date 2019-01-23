@@ -13,3 +13,10 @@ img[src*="#logo"] {
         color: #cc5e21;
     }
 }
+.download-link svg {
+    fill: #fff;
+    box-sizing: content-box;
+    position: relative;
+    top: 4px;
+    height: 18px !important;
+}
