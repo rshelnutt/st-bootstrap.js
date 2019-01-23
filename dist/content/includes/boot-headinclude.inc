@@ -1,10 +1,9 @@
 <!--#include file="../../../../Content/ASP/boot-build.asp"-->
 <!--#include file="../Includes/config.asp"-->
 <!--#include file="../../../../Content/ASP/boot-calc.asp"-->
-<%
-dim YouMayAlsoLikePID
-YouMayAlsoLikePID = 0
-%>
+
+<%dim YouMayAlsoLikePID
+YouMayAlsoLikePID = 0%>
 
 <!-- #include file="boot-redirects.inc" -->
 
@@ -48,62 +47,9 @@ YouMayAlsoLikePID = 0
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<!--Color Names-->
+<script src="//unpkg.com/color-name-list@3.52.1/dist/colornames.umd.js"></script>
+
 <!--Core Components-->
 <link rel="stylesheet" type="text/css" href="../st-app/modules/st-bootstrap/dist/styles.min.css">
 <script src="../st-app/modules/st-bootstrap/dist/st-bundle.js"></script>
-<script src="//unpkg.com/color-name-list@3.52.1/dist/colornames.umd.js"></script>
-
-<!-- Configuration -->
-<script>
-	var stappConfig = {
-	    'cfgVer'                  : '<%=cfgVer%>',
-	    'cfgShopID'               : '<%=cfgShopID%>',
-	    'cfgBread'                : '<%=cfgBread%>',
-	    'cfgShopName'             : '<%=cfgShopName%>',
-	    'cfgBrand'                : "<%=cfgBrand%>",
-	    'cfgBrandImg'             : '<%=cfgBrandImg%>',
-	    'cfgBrandPos'             : '<%=cfgBrandPos%>',
-	    'cfgPubAccess'            : '<%=cfgPubAccess%>',
-	    'cfgSidebar'              : '<%=cfgSidebar%>',
-	    'cfgFeatured'             : '<%=cfgFeatured%>',
-	    'cfgYMAL'                 : '<%=cfgYMAL%>',
-	    'cfgMobileTopBarBg'       : "<%=cfgMobileTopBarBg%>",
-	    'cfgMobileSideBarBg'      : "<%=cfgMobileSideBarBg%>",
-	    'cfgMobileBgOverlay'      : '<%=cfgMobileBgOverlay%>',
-	    'cfgMobileBgOverlayAlpha' : '<%=cfgMobileBgOverlayAlpha%>',
-	    'cfgOpenDescDesktop'      : '<%=cfgOpenDescDesktop%>',
-	    'cfgOpenDescMobile'       : '<%=cfgOpenDescMobile%>',
-	    'cfgLogin'                : '<%=cfgLogin%>',
-	    'cfgLoginModal'           : '<%=cfgLoginModal%>',
-	    'cfgCatMSRPLabel'         : '<%=cfgCatMSRPLabel%>',
-	    'cfgForgotPass'           : '<%=cfgForgotPass%>',
-	    'cfgAllowRegister'        : '<%=cfgAllowRegister%>',
-	    'cfgRegister'             : '<%=cfgRegister%>'
-	};
-</script>
-
-<script>
-    // Color Picker
-    // function require(script) {
-    //     $.ajax({
-    //         url: script,
-    //         dataType: "script",
-    //         async: true,           // <-- This is the key
-    //         success: function () {
-    //             // all good...
-    //         },
-    //         error: function () {
-    //             throw new Error("Could not load script " + script);
-    //         }
-    //     });
-    // }
-    // require("https://unpkg.com/color-name-list@3.52.1/dist/colornames.umd.js");
-
-    function navOverlay(){
-    	if (stappConfig.cfgMobileBgOverlay) {
-    		$("<style>.nav-overlay::after { background-color: " + stappConfig.cfgMobileBgOverlay + "; opacity: " + stappConfig.cfgMobileBgOverlayAlpha + " }</style>" ).appendTo( "head" );
-    	}
-    }
-    navOverlay();
-
-</script>
