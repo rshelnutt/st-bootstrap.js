@@ -1,4 +1,6 @@
+<!--#include file="../../../../Content/ASP/boot-build.asp"-->
 <!--#include file="../Includes/config.asp"-->
+<!--#include file="../../../../Content/ASP/boot-calc.asp"-->
 <%
 if UCase(Request.Form("Logoff")) = "LOGOFF" then
     Set objMgr = Server.CreateObject("VLSiteMgr.Interfaces")
@@ -64,8 +66,8 @@ YouMayAlsoLikePID = 0
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!--Core Components-->
-<link rel="stylesheet" type="text/css" href="/dsn/<%=ChildDSN%>/Style/styles.css?v=1.1">
-<script src="../dsn/<%=ChildDSN%>/Content/javascripts/st-bundle.js?v=1.64"></script>
+<link rel="stylesheet" type="text/css" href="../st-app/modules/st-bootstrap/dist/styles.css">
+<script src="../st-app/modules/st-bootstrap/dist/st-bundle.js"></script>
 <script src="//unpkg.com/color-name-list@3.52.1/dist/colornames.umd.js"></script>
 
 <!-- Configuration -->

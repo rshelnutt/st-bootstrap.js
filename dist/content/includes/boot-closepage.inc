@@ -40,10 +40,10 @@
 <script>Array.prototype.push=ArrayPushNativeCode;</script>
 
 <!--Bootstrap-->
-<script src="/dsn/<%=ChildDSN%>/Content/Javascripts/st-bootstrap.js?v=1"></script>
+<script src="../st-app/modules/st-bootstrap/dist/st-bootstrap.min.js"></script>
 
 <!--Site Core Functions-->
-<script src="/dsn/<%=ChildDSN%>/Content/Javascripts/site-core.js?v=1"></script>
+<script src="../dsn/<%=ChildDSN%>/Content/Javascripts/site-core.js"></script>
 
 <!--Perfect Scroll-->
 <script src="../st-app/lib/perfect-scrollbar/perfect-scrollbar-1.4.0.min.js"></script>
