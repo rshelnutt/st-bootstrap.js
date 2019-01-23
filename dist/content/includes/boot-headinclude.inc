@@ -2,23 +2,6 @@
 <!--#include file="../Includes/config.asp"-->
 <!--#include file="../../../../Content/ASP/boot-calc.asp"-->
 <%
-if UCase(Request.Form("Logoff")) = "LOGOFF" then
-    Set objMgr = Server.CreateObject("VLSiteMgr.Interfaces")
-    'user has requested to logoff page
-    SECURITY_GUEST = Application("SECURITY_GUEST")
-
-    If	clng(SecurityTypeID) > clng(SECURITY_GUEST) Then
-        ErrorNum = objMgr.LogOff()
-        objmgr.PopulateSessionGroups "Public,Commerce,Site,Content,Reservation"
-    End if
-
-    if ErrorNum = 0 then
-        Response.Redirect("../" & cfgHomepage &"/home.htm")
-    end if
-
-End If
-Set objMgr = Nothing
-
 dim YouMayAlsoLikePID
 YouMayAlsoLikePID = 0
 %>
@@ -66,7 +49,7 @@ YouMayAlsoLikePID = 0
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!--Core Components-->
-<link rel="stylesheet" type="text/css" href="../st-app/modules/st-bootstrap/dist/styles.css">
+<link rel="stylesheet" type="text/css" href="../st-app/modules/st-bootstrap/dist/styles.min.css">
 <script src="../st-app/modules/st-bootstrap/dist/st-bundle.js"></script>
 <script src="//unpkg.com/color-name-list@3.52.1/dist/colornames.umd.js"></script>
 
