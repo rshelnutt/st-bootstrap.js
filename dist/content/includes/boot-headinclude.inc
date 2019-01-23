@@ -90,9 +90,14 @@ YouMayAlsoLikePID = 0
 	    'cfgOpenDescMobile'       : '<%=cfgOpenDescMobile%>',
 	    'cfgLogin'                : '<%=cfgLogin%>',
 	    'cfgLoginModal'           : '<%=cfgLoginModal%>',
-	    'cfgCatMSRPLabel'         : '<%=cfgCatMSRPLabel%>'
+	    'cfgCatMSRPLabel'         : '<%=cfgCatMSRPLabel%>',
+	    'cfgForgotPass'           : '<%=cfgForgotPass%>',
+	    'cfgAllowRegister'        : '<%=cfgAllowRegister%>',
+	    'cfgRegister'             : '<%=cfgRegister%>'
 	};
+</script>
 
+<script>
     // Color Picker
     // function require(script) {
     //     $.ajax({
