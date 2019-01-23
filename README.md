@@ -34,7 +34,9 @@ After installation, you must configure the site settings. See [Config](#config) 
 
 ## Config
 ---
-To configure your site, modify the config file (installed above) at `/DSN/yourDSN/Content/Includes/config.asp`
+To configure your site, modify the config file (installed above) at the following location:
+
+```../DSN/yourDSN/Content/Includes/config.asp```
 
 <i>(View [config.asp](#) Wiki for detailed configuration options)</i>
 
