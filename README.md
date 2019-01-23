@@ -26,8 +26,15 @@ Speartek Bootstrap Framework
 - Ionicons 4.3+
 
 ## Installation
+To install, download the [latest distribution](#download) and extract all files into your DSN folder.
+After installation, you must configure the site settings. See [Config](#Config) section below.
 
 ## Config
+To configure your site, modify the config file (installed from above) at:
+
+```/DSN/yourDSN/Content/Includes/config.asp```
+
+<i>(View [config.asp](#) Wiki for detailed configuration options)</i>
 
 ## Structure
 #### Includes
