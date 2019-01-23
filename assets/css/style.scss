@@ -13,14 +13,12 @@ img[src*="#logo"] {
         color: #cc5e21;
     }
 }
+.github-link svg,
+.docs-link svg,
 .download-link svg {
+    margin-right: 0.2rem;
     fill: #fff;
     box-sizing: content-box;
     position: relative;
     top: 4px;
-}
-
-.github-link svg,
-.docs-link svg {
-    fill: #fff;
 }
