@@ -27,6 +27,7 @@ Speartek Bootstrap Framework
 
 ## Installation
 To install, download the [latest distribution](#download) and extract all files into your DSN folder.
+
 After installation, you must configure the site settings. See [Config](#Config) section below.
 
 ## Config
