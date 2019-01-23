@@ -53,3 +53,32 @@ YouMayAlsoLikePID = 0%>
 <!--Core Components-->
 <link rel="stylesheet" type="text/css" href="../st-app/modules/st-bootstrap/dist/styles.min.css">
 <script src="../st-app/modules/st-bootstrap/dist/st-bundle.js"></script>
+
+<script>
+// Configuration Ties
+var stappConfig = {
+    'cfgVer'                  : '<%=cfgVer%>',
+    'cfgShopID'               : '<%=cfgShopID%>',
+    'cfgBread'                : '<%=cfgBread%>',
+    'cfgShopName'             : '<%=cfgShopName%>',
+    'cfgBrand'                : "<%=cfgBrand%>",
+    'cfgBrandImg'             : '<%=cfgBrandImg%>',
+    'cfgBrandPos'             : '<%=cfgBrandPos%>',
+    'cfgPubAccess'            : '<%=cfgPubAccess%>',
+    'cfgSidebar'              : '<%=cfgSidebar%>',
+    'cfgFeatured'             : '<%=cfgFeatured%>',
+    'cfgYMAL'                 : '<%=cfgYMAL%>',
+    'cfgMobileTopBarBg'       : "<%=cfgMobileTopBarBg%>",
+    'cfgMobileSideBarBg'      : "<%=cfgMobileSideBarBg%>",
+    'cfgMobileBgOverlay'      : '<%=cfgMobileBgOverlay%>',
+    'cfgMobileBgOverlayAlpha' : '<%=cfgMobileBgOverlayAlpha%>',
+    'cfgOpenDescDesktop'      : '<%=cfgOpenDescDesktop%>',
+    'cfgOpenDescMobile'       : '<%=cfgOpenDescMobile%>',
+    'cfgLogin'                : '<%=cfgLogin%>',
+    'cfgLoginModal'           : '<%=cfgLoginModal%>',
+    'cfgCatMSRPLabel'         : '<%=cfgCatMSRPLabel%>',
+    'cfgForgotPass'           : '<%=cfgForgotPass%>',
+    'cfgAllowRegister'        : '<%=cfgAllowRegister%>',
+    'cfgRegister'             : '<%=cfgRegister%>'
+};
+</script>
