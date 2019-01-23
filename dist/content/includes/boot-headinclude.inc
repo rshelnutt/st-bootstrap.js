@@ -21,7 +21,7 @@ dim YouMayAlsoLikePID
 YouMayAlsoLikePID = 0
 %>
 
-<!-- #include file="301redirects.inc" -->
+<!-- #include file="boot-redirects.inc" -->
 
 <!-- Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@ YouMayAlsoLikePID = 0
 
 <!--Core Components-->
 <link rel="stylesheet" type="text/css" href="/dsn/<%=ChildDSN%>/Style/styles.css?v=1.1">
-<script src="../dsn/<%=ChildDSN%>/Content/javascripts/st-plugins.js?v=1.64"></script>
+<script src="../dsn/<%=ChildDSN%>/Content/javascripts/st-bundle.js?v=1.64"></script>
 <script src="//unpkg.com/color-name-list@3.52.1/dist/colornames.umd.js"></script>
 
 <!-- Configuration -->
