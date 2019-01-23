@@ -17,7 +17,6 @@ Speartek Bootstrap Framework
   - [Slider](#slider)
 
 ## Requirements
----
 - Speartek 723
 - Bootstrap 4.2.1
 - jQuery 3.3.1+
@@ -27,13 +26,11 @@ Speartek Bootstrap Framework
 - Ionicons 4.3+
 
 ## Installation
----
 To install, download the [latest distribution](#download) and extract all files into your DSN folder.
 
 After installation, you must configure the site settings. See [Config](#config) section below.
 
 ## Config
----
 To configure your site, modify the config file (installed above) at the following location:
 
 ```../DSN/yourDSN/Content/Includes/config.asp```
@@ -41,18 +38,15 @@ To configure your site, modify the config file (installed above) at the followin
 <i>(View [config.asp](#) Wiki for detailed configuration options)</i>
 
 ## Structure
----
 #### Includes
 #### Content Blocks
 
 ## Navigation
----
 #### Main Menu
 #### Slideout Menu (Mobile)
 #### Footer
 
 ## Page Elements
----
 #### Top Bar
 #### Hero
 #### Slider
