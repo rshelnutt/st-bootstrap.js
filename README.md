@@ -57,7 +57,7 @@ Insert the following in the corresponding sections:
 ```
 
 #### Page Classes
-Some pages are easier to work with when applying an identifying class to the Page Properties. No classes are currently required for any functionality, but there are some recommended classes to help make things easier.
+Some pages are easier to work with when applying an identifying class to the Page Properties. No classes are currently required for any functionality with st-bootstrap, but there are some recommended classes to help make things more smooth.
 
 **Recommended**
 
