@@ -15,7 +15,9 @@ Speartek Bootstrap Framework
 6. [Page Elements](#page-elements)
   - [Top Bar](#top-bar)
   - [Hero](#hero)
-  - [Slider](#slider)
+  - [Sliders](#sliders)
+    - [Standard Slider](#standard-slider)
+    - [Media Slider](#media-slider)
 7. [Custom Form Manager(CFM)](#custom-form-manager-cfm)
 8. [PayDirect](#paydirect)
   - [Themes](#themes)
@@ -62,10 +64,20 @@ Insert the following in the corresponding sections:
 Some pages are easier to work with when applying an identifying class to the Page Properties. No classes are currently required for any functionality with st-bootstrap, but there are some recommended classes to help make things more smooth.
 
 **Recommended**
-
 Homepage `homepage`
 
-#### Content Blocks
+...yea. That's it.
+
+### Content Blocks
+All default st-bootstrap blocks are identified in the admin by the BootStrap purple color and icon.
+
+Each page using st-bootstrap should have at least two blocks present. The general structure is:
+
+Page|
+--- |
+boot-Header.asp|
+Content |
+boot-Footer.asp |
 
 ## Navigation
 
@@ -82,11 +94,27 @@ A top bar can be added to the site by configuring your config.asp file. This top
 
 
 ### Fullwidth
+The `.fullwidth` class can be applied to any container-level element to make it span the full width of the screen. This is especially useful when using a constrained width site and you need an element to reach across the entire width of the page.
+
+This class can be combined with both the [hero](#hero) and [slider](#sliders) elements for some great effects.
+
+```html
+<div class="fullwidth">
+    This content spans across the entire page.
+</div>
+```
+
 
 ### Fullscreen
+Similar to the [fullwidth](#fullwidth) class, the `.fullscreen` class can be applied to any container-level element to make it span both the full width, and full viewport height of the screen (with the exception to the usage of [data-hero-height](#hero)).
+
+The `.fullscreen` class can also be combined with both the [hero](#hero) and [slider](#sliders) elements.
+
+**[Note]** This class forces the content to be absolutely positioned *behind* other content. It should be used strictly for media display purposes, at the top of the page, beneath the navigation.
+
 
 ### Hero
-You can automatically construct a hero image from your media. Simply attach the `.hero` class to a &lt;div&gt; containing your &lt;img&gt;.
+No super powers needed. Automatically construct a hero image from your media with ease. Simply attach the `.hero` class to a &lt;div&gt; containing your &lt;img&gt;.
 
 ###### **[Example]**
 ```html
@@ -95,18 +123,23 @@ You can automatically construct a hero image from your media. Simply attach the 
 </div>
 ```
 
-You can also pre-define the height of your hero by using the ```data-hero-height``` attribute.\
-This value is automatically measured in px, no unit should be appended to your value.
+You can also pre-define the height of your hero by using the ```data-hero-height``` attribute.
+This value is automatically measured in px - no measurement unit should be appended to this value.
 ```html
 <div class="hero" data-hero-height="220">
     <img src="myAwesomeHeroImage.jpg" />
 </div>
 ```
 
-### Slider
-Sliders are now a breeze to set up. Insert images, and even external video links with the `.slider-media` class.
+**[Pro Tip]** Add the [fullscreen](#fullscreen) class to your hero element with the ```data-hero-height``` attribute set for a perfect menu background effect that can be customized on every page.
 
-Attach the `.slider` class to a &lt;div&gt; or &lt;ul&gt; and it's contents will be automatically formatted with default settings.
+### Sliders
+Sliders are now a breeze to set up. Insert captions, images, and even external videos with the `.slider-media` class (see [Media Slider](#media-slider)).
+
+More configuration options are on the way.
+
+#### Standard Slider
+Attach the `.slider` class to a &lt;div&gt; or &lt;ul&gt; and it's contents will be automatically constructed into a slider.
 ```html
 <div class="slider">
     <img src="slide-1.jpg" />
@@ -122,8 +155,9 @@ or
     <li><img src="slide-3.jpg" /></li>
 </ul>
 ```
-
-To include external videos, add the `.slider-media` class to your `.slider` element.
+#### Media Slider
+To include external videos, as well as images, just add the `.slider-media` class to a &lt;ul&gt; slider.
+**[Note]** The Media Slider is NOT compatible with &lt;div&gt; sliders!
 ```html
 <ul class="slider slider-media">
     ...
@@ -131,10 +165,16 @@ To include external videos, add the `.slider-media` class to your `.slider` elem
 ```
 
 ##### Supported Videos
-This slider currently supports images, videos from YouTube and Vimeo, and direct link .mp4 files.
+The Media Slider currently supports:
+- Images
+- YouTube Videos
+- Vimeo Videos
+- Direct link .mp4 files
 
-- Attaching images to a slide is the same as the standard slider above.
-- To attach a video to a slide, insert the direct, plain-text link to the video directly into your &lt;li&gt;.
+##### Attaching Media
+Attaching images to a slide is the same as the [Standard Slider](#standard-slider).
+
+To attach a video to a slide, insert the direct, plain-text link to the video directly into your &lt;li&gt;.
 
 ###### **[Example]**
 ```html
@@ -143,6 +183,18 @@ This slider currently supports images, videos from YouTube and Vimeo, and direct
     <li>https://www.youtube.com/watch?v=UN3uF3990Q0</li>
 </ul>
 ```
+
+##### Set Media Slider Height
+You can also define the media slider's height manually by using the `data-slider-height` attribute.
+This value is automatically measured in px - no measurement unit should be appended to this value.
+```html
+<ul class="slider slider-media" data-slider-height="300">
+    <li><img src="slide-1.jpg" /></li>
+    <li>https://www.youtube.com/watch?v=UN3uF3990Q0</li>
+</ul>
+```
+
+##### Configuration Options
 Each video type has it's own unique options/attributes available:
 
 **Youtube**
@@ -177,12 +229,12 @@ Attach a custom "cover image" for your hosted .mp4 video by inserting the desire
 
 ##### Titles/Captions
 Add a title or caption the slide by using any heading element (h1,h2,h3,etc..) in the same &lt;li&gt;.
-
+All heading elements here are considered equal and are converted to &lt;p&gt; elements, regardless of numbering.
 ###### **[Example]**
 ```html
 <ul class="slider slider-media">
     <li>
-        <h3>This is an image</h3>
+        <h5>This is an image</h5>
         <img src="slide-1.jpg" />
     </li>
     <li data-video-start="6">
