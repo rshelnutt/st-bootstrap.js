@@ -185,7 +185,7 @@ To attach a video to a slide, insert the direct, plain-text link to the video di
 ```
 
 ##### Set Media Slider Height
-You can also define the media slider's height manually by using the `data-slider-height` attribute.
+Manually define the media slider's height by using the `data-slider-height` attribute.
 This value is automatically measured in px - no measurement unit should be appended to this value.
 ```html
 <ul class="slider slider-media" data-slider-height="300">
