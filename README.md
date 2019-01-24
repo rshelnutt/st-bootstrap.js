@@ -198,16 +198,16 @@ This value is automatically measured in px - no measurement unit should be appen
 ##### Configuration Options
 Each video type has it's own unique options/attributes available:
 
-**Youtube**
-`data-video-start` - Define the start time (in seconds) to begin the video playback - great for skipping ahead of openings or targeting better timeframes.
+* **Youtube**  
+   `data-video-start` - Define the start time (in seconds) to begin the video playback - great for skipping ahead of openings or targeting better timeframes.
 
-`data-video-playlist` - Define a playlist ID to play from after a video has completed.
+   `data-video-playlist` - Define a playlist ID to play from after a video has completed.
 
-**Vimeo**
-`data-video-start` - Define the start time (in seconds) to begin the video playback - great for skipping ahead of openings or targeting better timeframes.
+* **Vimeo**  
+   `data-video-start` - Define the start time (in seconds) to begin the video playback - great for skipping ahead of openings or targeting better timeframes.
 
-**.mp4**
-Attach a custom "cover image" for your hosted .mp4 video by inserting the desired image alongside the url in the &lt;li&gt;.
+* **.mp4**  
+   Attach a custom "cover image" for your hosted .mp4 video by inserting the desired image alongside the url in the &lt;li&gt;.
 
 ###### **[Example]**
 ```html
