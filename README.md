@@ -78,13 +78,13 @@ Homepage `homepage`
 #### Slider
 
 ## Custom Form Manager (CFM)
-To enable a responsive rebuild of the custom forms on your page, you must insert the following line directly beneath your  *boot-closepage.inc* in your Page Properties.
+To enable a responsive rebuild of the custom forms on your page, you must insert the following line directly beneath the *boot-closepage.inc* in your Page Properties.
 
 ```html
 <script src="../scripts/CFManagerBS4.js"></script>
 ```
 
-**[Note]** It is _strongly_ recommended that you **_DO NOT_** set this file globally. Custom Forms do not currently have a separate identifying class to target; attaching this builder may incidentally target unintended forms.
+**[Note]** It is _strongly_ recommended that you **_DO NOT_** set this file globally. Custom Forms do not currently have a separate identifying class to target; attaching this builder globally may incidentally target unintended forms.
 
 ## PayDirect
 
