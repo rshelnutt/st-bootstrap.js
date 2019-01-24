@@ -29,13 +29,11 @@ Speartek Bootstrap Framework
 - FontAwesome 5.6.3+
 - Ionicons 4.3+
 
-<br/>
 ## Installation
-To install, download the [latest distribution](#download) and extract all files in the <i>/dist/</i> folder to your DSN's root folder.
+To install, download the [latest distribution](#download) and extract all files in the */dist/* folder to your DSN's root folder.
 
 After installation, you -must- configure the site settings. See [Config](#config) section below.
 
-<br/>
 ## Config
 To configure your site, modify the config file (installed above) at the following location:
 
@@ -43,11 +41,10 @@ To configure your site, modify the config file (installed above) at the followin
 ../DSN/[yourDSN]/Content/Includes/config.asp
 ```
 
-<i>(View [config.asp](#) Wiki for detailed configuration options)</i>
+*(Read [config.asp](#) Wiki for detailed configuration options)*
 
-<br/>
 ## Structure
-#### Includes
+### Includes
 To set up your includes, navigate to `Content Manager > Edit Site Content > (Select page to edit) > Page Properties`
 
 Insert the following in the corresponding sections:
@@ -60,8 +57,8 @@ Insert the following in the corresponding sections:
 ```asp
 <!-- #include file="../Content/Includes/boot-closepage.inc" -->
 ```
-<br/>
-#### Page Classes
+
+### Page Classes
 Some pages are easier to work with when applying an identifying class to the Page Properties. No classes are currently required for any functionality with st-bootstrap, but there are some recommended classes to help make things more smooth.
 
 **Recommended**
@@ -70,19 +67,44 @@ Homepage `homepage`
 
 #### Content Blocks
 
-<br/>
 ## Navigation
-#### Main Menu
-#### Slideout Menu (Mobile)
-#### Footer
 
-<br/>
+### Main Menu
+
+### Slideout Menu (Mobile)
+
+### Footer
+
 ## Page Elements
-#### Top Bar
-#### Hero
-#### Slider
+### Top Bar
+A top bar can be added to the site by configuring your config.asp file. This top bar can be used to display phone, email and social media links.
+*(Read [config.asp](#) Wiki for detailed configuration options)*
 
-<br/>
+
+### Fullwidth
+
+### Fullscreen
+
+### Hero
+You can automatically construct a hero image from your media. Simply attach the `.hero` class to a &lt;div&gt; containing your &lt;img&gt;.
+
+###### **[Example]**
+```html
+<div class="hero">
+    <img src="myAwesomeHeroImage.jpg" />
+</div>
+```
+
+You can also predefine the height of your hero by using the ```data-hero-height``` attribute.
+This value is measured in px, no unit should be appended to your value. The calculations are performed automatically.
+```html
+<div class="hero" data-hero-height="220">
+    <img src="myAwesomeHeroImage.jpg" />
+</div>
+```
+
+### Slider
+
 ## Custom Form Manager (CFM)
 To enable a responsive rebuild of the custom forms on your page, you must insert the following line directly beneath the *boot-closepage.inc* in your Page Properties.
 
@@ -92,10 +114,9 @@ To enable a responsive rebuild of the custom forms on your page, you must insert
 
 **[Note]** It is _strongly_ recommended that you **_DO NOT_** set this file globally. Custom Forms do not currently have a separate identifying class to target; attaching this builder globally may incidentally target unintended forms.
 
-<br/>
 ## PayDirect
 
-#### Themes
+### Themes
 The PayDirect block is configurable with several various theme styles.
 To configure a theme for your PayDirect block, click the Page Properties link on the page containing the block and add one of the following classes to your Page Class:
 
