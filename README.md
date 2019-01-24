@@ -29,12 +29,13 @@ Speartek Bootstrap Framework
 - FontAwesome 5.6.3+
 - Ionicons 4.3+
 
+<br/>
 ## Installation
 To install, download the [latest distribution](#download) and extract all files in the <i>/dist/</i> folder to your DSN's root folder.
 
 After installation, you -must- configure the site settings. See [Config](#config) section below.
 
-<br/><br/>
+<br/>
 ## Config
 To configure your site, modify the config file (installed above) at the following location:
 
@@ -44,6 +45,7 @@ To configure your site, modify the config file (installed above) at the followin
 
 <i>(View [config.asp](#) Wiki for detailed configuration options)</i>
 
+<br/>
 ## Structure
 #### Includes
 To set up your includes, navigate to `Content Manager > Edit Site Content > (Select page to edit) > Page Properties`
@@ -58,7 +60,7 @@ Insert the following in the corresponding sections:
 ```asp
 <!-- #include file="../Content/Includes/boot-closepage.inc" -->
 ```
-
+<br/>
 #### Page Classes
 Some pages are easier to work with when applying an identifying class to the Page Properties. No classes are currently required for any functionality with st-bootstrap, but there are some recommended classes to help make things more smooth.
 
@@ -68,16 +70,19 @@ Homepage `homepage`
 
 #### Content Blocks
 
+<br/>
 ## Navigation
 #### Main Menu
 #### Slideout Menu (Mobile)
 #### Footer
 
+<br/>
 ## Page Elements
 #### Top Bar
 #### Hero
 #### Slider
 
+<br/>
 ## Custom Form Manager (CFM)
 To enable a responsive rebuild of the custom forms on your page, you must insert the following line directly beneath the *boot-closepage.inc* in your Page Properties.
 
@@ -87,6 +92,7 @@ To enable a responsive rebuild of the custom forms on your page, you must insert
 
 **[Note]** It is _strongly_ recommended that you **_DO NOT_** set this file globally. Custom Forms do not currently have a separate identifying class to target; attaching this builder globally may incidentally target unintended forms.
 
+<br/>
 ## PayDirect
 
 #### Themes
