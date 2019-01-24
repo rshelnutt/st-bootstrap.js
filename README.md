@@ -34,6 +34,7 @@ To install, download the [latest distribution](#download) and extract all files 
 
 After installation, you -must- configure the site settings. See [Config](#config) section below.
 
+<br/><br/>
 ## Config
 To configure your site, modify the config file (installed above) at the following location:
 
