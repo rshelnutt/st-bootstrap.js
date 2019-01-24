@@ -69,7 +69,7 @@ Homepage `homepage`
 ...yea. That's it.
 
 ### Content Blocks
-All default st-bootstrap blocks are identified in the admin by the BootStrap purple color and icon.
+All default st-bootstrap blocks are identified in the admin by Bootstrap's purple color and icon.
 
 Each page using st-bootstrap should have at least two blocks present. The general structure is:
 
