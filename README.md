@@ -95,8 +95,8 @@ You can automatically construct a hero image from your media. Simply attach the 
 </div>
 ```
 
-You can also predefine the height of your hero by using the ```data-hero-height``` attribute.
-This value is measured in px, no unit should be appended to your value. The calculations are performed automatically.
+You can also predefine the height of your hero by using the ```data-hero-height``` attribute.\
+This value is automatically measured in px, no unit should be appended to your value.
 ```html
 <div class="hero" data-hero-height="220">
     <img src="myAwesomeHeroImage.jpg" />
