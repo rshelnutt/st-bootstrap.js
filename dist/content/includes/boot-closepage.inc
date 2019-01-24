@@ -45,8 +45,5 @@
 <!--Site Core Functions-->
 <script src="../dsn/<%=ChildDSN%>/Content/Javascripts/site-core.js"></script>
 
-<!--Perfect Scroll-->
-<script src="../st-app/lib/perfect-scrollbar/perfect-scrollbar-1.4.0.min.js"></script>
-
 <!-- Ionicons -->
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
