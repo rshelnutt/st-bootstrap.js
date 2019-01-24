@@ -95,7 +95,7 @@ You can automatically construct a hero image from your media. Simply attach the 
 </div>
 ```
 
-You can also predefine the height of your hero by using the ```data-hero-height``` attribute.\
+You can also pre-define the height of your hero by using the ```data-hero-height``` attribute.\
 This value is automatically measured in px, no unit should be appended to your value.
 ```html
 <div class="hero" data-hero-height="220">
@@ -104,6 +104,93 @@ This value is automatically measured in px, no unit should be appended to your v
 ```
 
 ### Slider
+Sliders are now a breeze to set up. Insert images, and even external video links with the `.slider-media` class.
+
+Attach the `.slider` class to a &lt;div&gt; or &lt;ul&gt; and it's contents will be automatically formatted with default settings.
+```html
+<div class="slider">
+    <img src="slide-1.jpg" />
+    <img src="slide-2.jpg" />
+    <img src="slide-3.jpg" />
+</div>
+```
+or
+```html
+<ul class="slider">
+    <li><img src="slide-1.jpg" /></li>
+    <li><img src="slide-2.jpg" /></li>
+    <li><img src="slide-3.jpg" /></li>
+</ul>
+```
+
+To include external videos, add the `.slider-media` class to your `.slider` element.
+```html
+<ul class="slider slider-media">
+    ...
+</ul>
+```
+
+##### Supported Videos
+This slider currently supports images, videos from YouTube and Vimeo, and direct link .mp4 files.
+
+- Attaching images to a slide is the same as the standard slider above.
+- To attach a video to a slide, insert the direct, plain-text link to the video directly into your &lt;li&gt;.
+
+###### **[Example]**
+```html
+<ul class="slider slider-media">
+    <li><img src="slide-1.jpg" /></li>
+    <li>https://www.youtube.com/watch?v=UN3uF3990Q0</li>
+</ul>
+```
+Each video type has it's own unique options/attributes available:
+
+**Youtube**
+`data-video-start` - Define the start time (in seconds) to begin the video playback - great for skipping ahead of openings or targeting better timeframes
+
+`data-video-playlist` - Define a playlist ID to play from after a video has completed
+
+**Vimeo**
+`data-video-start` - Define the start time (in seconds) to begin the video playback - great for skipping ahead of openings or targeting better timeframes
+
+**.mp4**
+Attach a custom "cover image" for your hosted .mp4 video by inserting the desired image alongside the url in the &lt;li&gt;.
+
+###### **[Example]**
+```html
+<ul class="slider slider-media">
+    <li>
+        <img src="slide-1.jpg" />
+    </li>
+    <li data-video-start="12" data-video-playlist="PLoCt_TmodrfmxTXFxOaCwJ7_8n8DCZetQ">
+        https://www.youtube.com/watch?v=UN3uF3990Q0
+    </li>
+    <li data-video-start="6">
+        https://vimeo.com/218706459
+    </li>
+    <li data-video-start="6">
+        <img src="video-cover-image.jpg" />
+        https://www.website.com/videos/video.mp4
+    </li>
+</ul>
+```
+
+##### Titles/Captions
+Add a title or caption the slide by using any heading element (h1,h2,h3,etc..) in the same &lt;li&gt;.
+
+###### **[Example]**
+```html
+<ul class="slider slider-media">
+    <li>
+        <h3>This is an image</h3>
+        <img src="slide-1.jpg" />
+    </li>
+    <li data-video-start="6">
+        <h3>This is from Vimeo</h3>
+        https://vimeo.com/218706459
+    </li>
+</ul>
+```
 
 ## Custom Form Manager (CFM)
 To enable a responsive rebuild of the custom forms on your page, you must insert the following line directly beneath the *boot-closepage.inc* in your Page Properties.
