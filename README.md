@@ -67,7 +67,7 @@ Some pages are easier to work with when applying an identifying class to the Pag
 
 Homepage `homepage`
 
-...yea. That's it.
+...yep. That's it.
 
 ### Content Blocks
 All default st-bootstrap blocks are identified in the admin by Bootstrap's purple color and icon.
