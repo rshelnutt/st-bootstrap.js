@@ -75,7 +75,7 @@ All default st-bootstrap web blocks are identified in the admin by Bootstrap's p
 
 <span style="color: #b1bec3;margin-bottom: 2rem;display: inline-block;font-size: 0.9rem;margin-left: 1rem;">[Responsive] Web block information is listed here</span> ![ST Bootstrap 4](https://www.speartek.com/st-app/dist/ico/ico-bs4.png "Bootstrap 4")
 
-Each page using st-bootstrap should have at least two blocks present. The general structure is:
+Each page using st-bootstrap should have at least two web blocks present. The general structure is:
 
 Page Layout|
 --- |
@@ -98,7 +98,7 @@ A top bar can be added to the site by configuring your config.asp file. This top
 
 
 ### Fullwidth
-The `.fullwidth` class can be applied to any container-level element to make it span the full width of the screen. This is especially useful when using a constrained width site and you need an element to reach across the entire width of the page.
+The `.fullwidth` class can be applied to any container-level element or Content Properties section to make it span the full width of the screen. This is especially useful when using a constrained width site and you need an element to reach across the entire width of the page.
 
 This class can be combined with both the [hero](#hero) and [slider](#sliders) elements for some great effects.
 
