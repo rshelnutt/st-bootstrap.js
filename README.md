@@ -110,7 +110,7 @@ Similar to the [fullwidth](#fullwidth) class, the `.fullscreen` class can be app
 
 The `.fullscreen` class can also be combined with both the [hero](#hero) and [slider](#sliders) elements.
 
-**[Note]** This class forces the content to be absolutely positioned *behind* other content. It should be used strictly for media display purposes, at the top of the page, beneath the navigation.
+**[Note]** This class forces the content to be absolutely positioned *behind* other content. It should be used strictly for media display purposes, directly beneath the top menu.
 
 
 ### Hero
