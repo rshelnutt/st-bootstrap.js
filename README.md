@@ -71,9 +71,9 @@ Homepage `homepage`
 ### Web Blocks
 All default st-bootstrap web blocks are identified in the admin by Bootstrap's purple color and icon.
 
-<div style="background-color: #7947bb; color: #fff; max-width: 400px; padding: 0.2rem 1rem 0.2rem 1rem; margin-bottom: 0.5rem;">boot-BlockName.asp</div>
+<div style="background-color:#7947bb;margin-top: 2rem;color: #fff;max-width:380px;padding:0.2rem 1rem 0.2rem 1rem;margin-bottom: 0.5rem;">boot-BlockName.asp</div>
 
-<span style="color: #b1bec3;">[Responsive] Web block information is listed here</span> ![ST Bootstrap 4](https://www.speartek.com/st-app/dist/ico/ico-bs4.png "Bootstrap 4")
+<span style="color: #b1bec3;margin-bottom: 2rem;display: inline-block;font-size: 0.9rem;margin-left: 1rem;">[Responsive] Web block information is listed here</span> ![ST Bootstrap 4](https://www.speartek.com/st-app/dist/ico/ico-bs4.png "Bootstrap 4")
 
 Each page using st-bootstrap should have at least two blocks present. The general structure is:
 
