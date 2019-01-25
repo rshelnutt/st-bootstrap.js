@@ -43,6 +43,16 @@ img[src*="#logo"] {
         color: #b3b3b3;
     }
 }
+h4 + p + .language-html + ul {
+    list-style-type: none;
+    margin-top: 2rem;
+    background: #fbfcfd;
+    border: 1px solid #dce6f0;
+    border-radius: 0.3rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
 .github-link svg,
 .docs-link svg,
 .download-link svg {
