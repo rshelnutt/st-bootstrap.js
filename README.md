@@ -7,7 +7,7 @@ Speartek Bootstrap Framework
 4. [Structure](#structure)
   - [Includes](#includes)
   - [Page Classes](#page-classes)
-  - [Content Blocks](#content-blocks)
+  - [Web Blocks](#web-blocks)
 5. [Navigation](#navigation)
   - [Main Menu](#main-menu)
   - [Slideout Menu (Mobile)](#slideout-menu-mobile)
@@ -68,8 +68,12 @@ Homepage `homepage`
 
 ...yep. That's it.
 
-### Content Blocks
-All default st-bootstrap blocks are identified in the admin by Bootstrap's purple color and icon.
+### Web Blocks
+All default st-bootstrap web blocks are identified in the admin by Bootstrap's purple color and icon.
+
+<div style="background-color: #7947bb; color: #fff; max-width: 400px; padding: 0.2rem 1rem 0.2rem 1rem; margin-bottom: 0.5rem;">boot-BlockName.asp</div>
+
+<span style="color: #b1bec3;">[Responsive] Web block information is listed here</span> ![ST Bootstrap 4](https://www.speartek.com/st-app/dist/ico/ico-bs4.png "Bootstrap 4")
 
 Each page using st-bootstrap should have at least two blocks present. The general structure is:
 
@@ -80,7 +84,7 @@ Content |
 boot-Footer.asp |
 
 ## Navigation
-
+st-bootstrap offers several options for menu configuration and setup.
 ### Main Menu
 
 ### Slideout Menu (Mobile)
@@ -243,7 +247,7 @@ To include external videos, as well as images, just add the `.slider-media` clas
    ```
 
 ## Custom Form Manager (CFM)
-To enable a responsive rebuild of the custom forms on your page, you must insert the following line directly beneath the *boot-closepage.inc* in your Page Properties.
+To enable a responsive rebuild of any custom form on a page, insert the following line directly beneath the *boot-closepage.inc* in your form's Page Properties.
 
 ```html
 <script src="../scripts/CFManagerBS4.js"></script>
