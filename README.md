@@ -257,11 +257,13 @@ To enable a responsive rebuild of the custom forms on your page, you must insert
 The PayDirect block is configurable with several various theme styles.
 To configure a theme for your PayDirect block, click the Page Properties link on the page containing the block and add one of the following classes to your Page Class:
 
-Clarity `pd-theme-clarity`
-Mint `pd-theme-mint`
-Lagoon `pd-theme-lagoon`
-Tempest `pd-theme-tempest`
-Rewards `pd-theme-rewards`
-Amethyst `pd-theme-amethyst`
-Sunburst `pd-theme-sunburst`
-Firebrand `pd-theme-firebrand`
+Theme Name  |  Class
+---|---
+Clarity|`pd-theme-clarity`  
+Mint|`pd-theme-mint`  
+Lagoon|`pd-theme-lagoon`  
+Tempest|`pd-theme-tempest`  
+Rewards|`pd-theme-rewards`  
+Amethyst|`pd-theme-amethyst`  
+Sunburst|`pd-theme-sunburst`  
+Firebrand|`pd-theme-firebrand`  
