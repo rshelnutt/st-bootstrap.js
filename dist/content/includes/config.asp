@@ -3,30 +3,30 @@
 '---------------------------------------
     cfgVer         = "723" 'int
     cfgShopID      = "1" 'int
-    cfgHomeCatID   = "71" 'int
-    cfgBread       = "true" 'boolean
-    cfgShopName    = "On Tour Golf" 'string
-    cfgBrand       = "otg-logo-original.svg" 'string [imagename.png, jpg, gif, svg]
-    cfgBrandHeight  = "103px" 'int + px, %, em, rem
-    cfgBrandPos    = "left" 'string [left right center menuLeft menuRight menuCenter none]
-    cfgSidebar     = "none" 'string [left right none]
-    cfgFeatured    = "2" 'int
-    cfgYMAL        = "false" 'boolean
+    cfgHomeCatID   = "" 'int
+    cfgBread       = "" 'boolean
+    cfgShopName    = "" 'string
+    cfgBrand       = "" 'string [imagename.png, jpg, gif, svg]
+    cfgBrandHeight = "" 'int + px, %, em, rem
+    cfgBrandPos    = "" 'string [left right center menuLeft menuRight menuCenter none]
+    cfgSidebar     = "" 'string [left right none]
+    cfgFeatured    = "" 'int [Featured products Category #]
+    cfgYMAL        = "" 'boolean
 
 ' Site & Registration Settings
 '---------------------------------------
-    cfgPubAccess            = "true" 'boolean
-    cfgPubBrowse            = "true" 'boolean
-    cfgPubCheckout          = "false" 'boolean
-    cfgAllowRegister        = "true" 'boolean
-    cfgRequireActivation    = "false" 'boolean
-    cfgRegisteredGroup      = "Wholesale" 'string
-    cfgRegisteredPersonType = "Wholesale" 'string
+    cfgPubAccess            = "" 'boolean
+    cfgPubBrowse            = "" 'boolean
+    cfgPubCheckout          = "" 'boolean
+    cfgAllowRegister        = "" 'boolean
+    cfgRequireActivation    = "" 'boolean
+    cfgRegisteredGroup      = "" 'string
+    cfgRegisteredPersonType = "User" 'string
 
 ' Contact Settings
 '---------------------------------------
     cfgContactEmail = "" 'string
-    cfgContactPhone = "561.379.9367" 'string
+    cfgContactPhone = "" 'string
 
 ' Social Media Settings
 '---------------------------------------
@@ -40,68 +40,68 @@
 
 ' Menu Settings
 '---------------------------------------
-    cfgSubBar        = "false" 'boolean
-    cfgMenuCustom    = "false" 'boolean
-    cfgNavCenterLink = "true" 'boolean
-    cfgSlideMenu     = "true" 'boolean
+    cfgSubBar        = "" 'boolean
+    cfgMenuCustom    = "" 'boolean
+    cfgNavCenterLink = "" 'boolean
+    cfgSlideMenu     = "" 'boolean
 
 ' Top Bar Settings
 '---------------------------------------
-    cfgMobileTopBarBg       = "ball-hole-bg.jpg" 'string [imagename.png, jpg, gif, svg]
-    cfgMobileSideBarBg      = "beach-golf.jpg" 'string [imagename.png, jpg, gif, svg]
-    cfgMobileBgOverlay      = "#000" 'string [ColorName or #hex, empty for none]
-    cfgMobileBgOverlayAlpha = "0.3" 'int [1 for 100%, 0.4 for 40%, etc]
+    cfgMobileTopBarBg       = "" 'string [imagename.png, jpg, gif, svg]
+    cfgMobileSideBarBg      = "" 'string [imagename.png, jpg, gif, svg]
+    cfgMobileBgOverlay      = "" 'string [ColorName or #hex, empty for none]
+    cfgMobileBgOverlayAlpha = "" 'int [1 for 100%, 0.4 for 40%, etc]
 
 ' Page Settings
 '---------------------------------------
-    cfgHomepage       = "70" 'string
-    cfgSearch         = "85" 'string
-    cfgLogin          = "78" 'string
-    cfgLoginModal     = "78" 'string
-    cfgRegister       = "76" 'string
-    cfgAccount        = "74" 'string
-    cfgCart           = "75" 'string
-    cfgContact        = "80" 'string
-    cfgHistory        = "83" 'string
+    cfgHomepage       = "" 'string
+    cfgSearch         = "" 'string
+    cfgLogin          = "" 'string
+    cfgLoginModal     = "" 'string
+    cfgRegister       = "" 'string
+    cfgAccount        = "" 'string
+    cfgCart           = "" 'string
+    cfgContact        = "" 'string
+    cfgHistory        = "" 'string
     cfgSavedCarts     = "" 'string
     cfgOffers         = "" 'string
     cfgRecentlyViewed = "" 'string
     cfgStoreFinder    = "" 'string
-    cfgForgotPass     = "82" 'string
+    cfgForgotPass     = "" 'string
     cfgFAQ            = "" 'string
     cfgTerms          = "" 'string
     cfgPrivacy        = "" 'string
 
 ' Category/Product List View
 '---------------------------------------
-    cfgAccordion         = "false" 'boolean
-    cfgShowCatMSRP       = "true" 'boolean
-    cfgCatMSRPLabel      = "MSRP" 'string
-    cfgProdShowID        = "false" 'boolean
-    cfgProdShowBrand     = "false" 'boolean
-    cfgProdShowProdLabel = "false" 'boolean
-    cfgProdShortname     = "true" 'boolean
-    cfgDiscountPercent   = "false" 'boolean
-    cfgOpenDescDesktop   = "true" 'boolean
-    cfgOpenDescMobile    = "false" 'boolean
+    cfgAccordion         = "" 'boolean
+    cfgShowCatMSRP       = "" 'boolean
+    cfgCatMSRPLabel      = "" 'string
+    cfgProdShowID        = "" 'boolean
+    cfgProdShowBrand     = "" 'boolean
+    cfgProdShowProdLabel = "" 'boolean
+    cfgProdShortname     = "" 'boolean
+    cfgDiscountPercent   = "" 'boolean
+    cfgOpenDescDesktop   = "" 'boolean
+    cfgOpenDescMobile    = "" 'boolean
 
 ' Product View
 '---------------------------------------
-    cfgShowProdMSRP             = cfgShowCatMSRP 'variable or boolean
-    cfgProdMSRPLabel            = cfgCatMSRPLabel 'variable or string
+    cfgShowProdMSRP             = cfgShowCatMSRP 'variable or "boolean"
+    cfgProdMSRPLabel            = cfgCatMSRPLabel 'variable or "string"
 
-    cfgContBtnLeaveOnPage       = "true" 'boolean
+    cfgContBtnLeaveOnPage       = "" 'boolean
 
-    cfgRestrictedMessageShow    = "true" 'Enable show restricted login message (boolean)
-    cfgRestrictedMessageGroup   = "1" 'Show restricted login message to this group (array int,int,int)
-    cfgRestrictedMessageName    = "Wholesale" 'name of the exclusive access group ie. Wholesale
+    cfgRestrictedMessageShow    = "" 'Show restricted login message (boolean)
+    cfgRestrictedMessageGroup   = "" 'Show restricted login message to this group (array int,int,int)
+    cfgRestrictedMessageName    = "" 'Name of the exclusive access group (ie. Wholesale)
 
-    cfgRestrictPricebreakView   = "true" 'Enable group restrictive view of price breaks (boolean)
-    cfgHidePricebreakFromGroups = "5" 'Show pricebreak to all groups except... (array int,int,int)
+    cfgRestrictPricebreakView   = "" 'Restrict view of price breaks (boolean)
+    cfgHidePricebreakFromGroups = "" 'Show pricebreak to all groups except... (array int,int,int)
 
-    cfgQtyInputStyle            = "block" 'empty(default), circle, block
+    cfgQtyInputStyle            = "" 'empty (default), circle, block
 
 ' Checkout Settings
 '---------------------------------------
-    cfgShowShippingEstimator = "false"
+    cfgShowShippingEstimator = "" 'boolean
 %>
