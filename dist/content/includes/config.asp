@@ -83,7 +83,7 @@
     cfgProdShortname     = "" 'boolean
     cfgDiscountPercent   = "" 'boolean
     cfgOpenDescDesktop   = "" 'boolean
-    cfgOpenDescMobile    = "" 'boolean
+    cfgOpenDescMobile    = "" 'booleanz
 
 ' Product View
 '---------------------------------------
