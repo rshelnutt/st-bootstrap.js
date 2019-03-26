@@ -22,7 +22,7 @@
 
 <script>Array.prototype.push=ArrayPushNativeCode;</script>
 
-<!--Bootstrap-->
+<!-- Bootstrap -->
 <script src="../st-app/modules/st-bootstrap/dist/st-bootstrap.min.js"></script>
 
 <!--Site Core Functions-->
