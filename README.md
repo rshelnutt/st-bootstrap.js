@@ -64,7 +64,7 @@ Insert the following in the corresponding sections:
 ### Page Classes
 Some pages are easier to work with when applying an identifying class to the Page Properties. No classes are currently required for any functionality with st-bootstrap, but there are some recommended classes to help make things more smooth.
 
-**Recommended**  
+#### Recommended
 Homepage `.homepage`
 
 ...yep. That's it.
@@ -78,7 +78,6 @@ The `.contain` class can be applied to any container-level element or Content Pr
     This content's width is restricted to a maximum of 1140px, with automatic margins on the left and right.
 </div>
 ```
-
 
 
 #### Fullwidth
