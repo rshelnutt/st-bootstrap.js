@@ -1,107 +1,153 @@
 <%
 ' Template Settings
 '---------------------------------------
-    cfgVer         = "723" 'int
-    cfgShopID      = "1" 'int
-    cfgHomeCatID   = "" 'int
-    cfgBread       = "" 'boolean
-    cfgShopName    = "" 'string
-    cfgBrand       = "" 'string [imagename.png, jpg, gif, svg]
-    cfgBrandHeight = "" 'int + px, %, em, rem
-    cfgBrandPos    = "" 'string [left right center menuLeft menuRight menuCenter none]
-    cfgSidebar     = "" 'string [left right none]
-    cfgFeatured    = "" 'int [Featured products Category #]
-    cfgYMAL        = "" 'boolean
+cfgVer = "723"
+cfgSvcWorker = "true"
+cfgShopID = "1"
+cfgBread = "true"
+cfgShopName = "Template"
+cfgThemeColor = "#253992"
+
+' Integration Settings
+'---------------------------------------
+cfgGoogleUA = "UA-000000000-1"
+cfgGoogleTransCompletePage = ""
+cfgFbPixelID = ""
 
 ' Site & Registration Settings
 '---------------------------------------
-    cfgPubAccess            = "" 'boolean
-    cfgPubBrowse            = "" 'boolean
-    cfgPubCheckout          = "" 'boolean
-    cfgAllowRegister        = "" 'boolean
-    cfgRequireActivation    = "" 'boolean
-    cfgRegisteredGroup      = "" 'string
-    cfgRegisteredPersonType = "User" 'string
+cfgAdminGroup = ""
+cfgPubAccess = "true"
+cfgPubBrowse = "true"
+cfgPubCheckout = "true"
+cfgAllowRegister = "true"
+cfgModalRegisterLinkText = "" 'default is Register
+cfgRegisterPass = "false"
+cfgRegisterPassSet = ""
+cfgRequireActivation = "false"
+cfgRegisteredGroup = "Distributor"
+cfgRegisteredPersonType = "Member"
 
-' Contact Settings
+' Form Settings
 '---------------------------------------
-    cfgContactEmail = "" 'string
-    cfgContactPhone = "" 'string
+cfgCFMAnimatedLabels = "false"
 
 ' Social Media Settings
 '---------------------------------------
-    cfgFb         = ""
-    cfgInsta      = ""
-    cfgTwitter    = ""
-    cfgYouTube    = ""
-    cfgPinterest  = ""
-    cfgLinkedIn   = ""
-    cfgSocialMail = ""
+cfgSocialSubBarPos = ""
+cfgFb = "#"
+cfgInsta = "#"
+cfgTwitter = "#"
+cfgYouTube = "#"
+cfgPinterest = "#"
+cfgSnapchat = "#"
+cfgLinkedIn = "#"
+cfgSocialMail = ""
+
+' SubBar Settings
+'---------------------------------------
+cfgAnnouncementBar = "Top Bar Info"
+cfgSubBar = "true"
+cfgSubBarFullwidth = "false"
+cfgCustomSubBarText  = "" 'string
+cfgContactSubBarShow = ""
+cfgContactEmail = ""
+cfgContactPhone = ""
 
 ' Menu Settings
 '---------------------------------------
-    cfgSubBar        = "" 'boolean
-    cfgMenuCustom    = "" 'boolean
-    cfgNavCenterLink = "" 'boolean
-    cfgSlideMenu     = "" 'boolean
+cfgBrand = "" 'string [imagename.png, jpg, gif, svg]
+cfgBrandHeight = "90px" 'int + px, %, em, rem
+cfgBrandPos = "menuLeft" 'string [left right center menuLeft menuRight menuCenter none]
+cfgCartIcon = ""
+cfgMenuPos = "top"
+cfgMenuPerfectCenter = ""
+cfgMenuCustom = "true"
+cfgMenuFullwidth = "false"
+cfgDropMenuWidth = ""
+cfgNavCenterLink = "false"
+cfgMobileMenuText = ""
+cfgSlideMenu = "true"
 
 ' Top Bar Settings
 '---------------------------------------
-    cfgMobileTopBarBg       = "" 'string [imagename.png, jpg, gif, svg]
-    cfgMobileSideBarBg      = "" 'string [imagename.png, jpg, gif, svg]
-    cfgMobileBgOverlay      = "" 'string [ColorName or #hex, empty for none]
-    cfgMobileBgOverlayAlpha = "" 'int [1 for 100%, 0.4 for 40%, etc]
+cfgMobileTopBarBg = "" 'string [imagename.png, jpg, gif, svg]
+cfgMobileSideBarBg = "" 'string [imagename.png, jpg, gif, svg]
+cfgMobileBgOverlay = "" 'string [imagename.png, jpg, gif, svg]
+cfgMobileBgOverlayAlpha = "" 'int [1 for 100%, 0.4 for 40%, etc]
 
 ' Page Settings
 '---------------------------------------
-    cfgHomepage       = "" 'string
-    cfgSearch         = "" 'string
-    cfgLogin          = "" 'string
-    cfgLoginModal     = "" 'string
-    cfgRegister       = "" 'string
-    cfgAccount        = "" 'string
-    cfgCart           = "" 'string
-    cfgContact        = "" 'string
-    cfgHistory        = "" 'string
-    cfgSavedCarts     = "" 'string
-    cfgOffers         = "" 'string
-    cfgRecentlyViewed = "" 'string
-    cfgStoreFinder    = "" 'string
-    cfgForgotPass     = "" 'string
-    cfgFAQ            = "" 'string
-    cfgTerms          = "" 'string
-    cfgPrivacy        = "" 'string
+cfgHomepage = ""
+cfgCategories = ""
+cfgSearch = ""
+cfgLogin = ""
+cfgLoginModal = ""
+cfgRegister = ""
+cfgAccount = ""
+cfgCart = ""
+cfgContact = ""
+cfgHistory = ""
+cfgSavedCarts = ""
+cfgOffers = ""
+cfgRecentlyViewed = ""
+cfgStoreFinder = ""
+cfgStoreManager = ""
+cfgForgotPass = ""
+cfgFAQ = ""
+cfgTerms = ""
+cfgShippingReturn = ""
+cfgPrivacy = ""
+
+' Featured Category Settings
+'---------------------------------------
+cfgFeaturedCategory = "1" 'int [Featured Products Category #]
+cfgFeaturedTitle = "Featured Products"
+cfgFeaturedStyle = ""
+cfgFeaturedCount = "4"
 
 ' Category/Product List View
 '---------------------------------------
-    cfgAccordion         = "" 'boolean
-    cfgShowCatMSRP       = "" 'boolean
-    cfgCatMSRPLabel      = "" 'string
-    cfgProdShowID        = "" 'boolean
-    cfgProdShowBrand     = "" 'boolean
-    cfgProdShowProdLabel = "" 'boolean
-    cfgProdShortname     = "" 'boolean
-    cfgDiscountPercent   = "" 'boolean
-    cfgOpenDescDesktop   = "" 'boolean
-    cfgOpenDescMobile    = "" 'booleanz
+cfgAccordion = "true"
+cfgAccordionDisplay = "category" 'string [category, product, both]
+cfgAccordionShowAll = "true"
+cfgBreadcrumb = "both"
+cfgShowCatMSRP = "false"
+cfgCatMSRPLabel = ""
+cfgProdShowID = "true"
+cfgCatShowBrand = "true"
+cfgCatShowPartLabel = "true"
+cfgProdShortname = "false"
+cfgDiscountPercent = ""
+cfgFilterDisplay = "modal" 'string [inline, modal, empty for none]
 
 ' Product View
 '---------------------------------------
-    cfgShowProdMSRP             = cfgShowCatMSRP 'variable or "boolean"
-    cfgProdMSRPLabel            = cfgCatMSRPLabel 'variable or "string"
+cfgOpenDescDesktop = "true"
+cfgOpenDescMobile = "true"
 
-    cfgContBtnLeaveOnPage       = "" 'boolean
+cfgShowProdMSRP = "false" 'variable or "boolean"
+cfgProdMSRPLabel = "" 'variable or "string"
 
-    cfgRestrictedMessageShow    = "" 'Show restricted login message (boolean)
-    cfgRestrictedMessageGroup   = "" 'Show restricted login message to this group (array int,int,int)
-    cfgRestrictedMessageName    = "" 'Name of the exclusive access group (ie. Wholesale)
+cfgContBtnLeaveOnPage = "true"
+cfgProductReviews = "false"
 
-    cfgRestrictPricebreakView   = "" 'Restrict view of price breaks (boolean)
-    cfgHidePricebreakFromGroups = "" 'Show pricebreak to all groups except... (array int,int,int)
+cfgRestrictedMessageShow = "false" 'Show restricted login message (boolean)
+cfgRestrictedMessageGroup = "" 'Show restricted login message to this group (array int,int,int)
+cfgRestrictedMessageName = "" 'Name of the exclusive access group (ie. Wholesale)
 
-    cfgQtyInputStyle            = "" 'empty (default), circle, block
+cfgRestrictPricebreakView = "" 'Restrict view of price breaks (boolean)
+cfgHidePricebreakFromGroups = "" 'Show pricebreak to all groups except... (array int,int,int)
+cfgQtyInputStyle = "block" 'empty (default), circle, block
 
 ' Checkout Settings
 '---------------------------------------
-    cfgShowShippingEstimator = "" 'boolean
+cfgShowShippingEstimator = "false"
+
+' Footer Settings
+'---------------------------------------
+cfgFooterLinksPos = "top"
+cfgSocialFooterPos = "bottom"
+cfgFooterCopy = "All Rights Reserved"
+cfgFooterDelimiter = "&bull;"
 %>
