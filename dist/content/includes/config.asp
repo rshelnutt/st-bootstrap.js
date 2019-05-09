@@ -60,11 +60,11 @@ cfgBrand = "" 'string [imagename.png, jpg, gif, svg]
 cfgBrandHeight = "90px" 'int + px, %, em, rem
 cfgBrandPos = "menuLeft" 'string [left right center menuLeft menuRight menuCenter none]
 cfgCartIcon = ""
-cfgMenuPos = "top"
-cfgMenuPerfectCenter = ""
+cfgMenuPos = "top" 'string [top left right none]
+cfgMenuPerfectCenter = "" 'boolean [used with menucenter in cfgBrandPos]
 cfgMenuCustom = "true"
-cfgMenuFullwidth = "false"
-cfgDropMenuWidth = ""
+cfgMenuFullwidth = "false" 'mixed [false,true,contain]
+cfgDropMenuWidth = "" 'string [center, spread, empty for default]
 cfgNavCenterLink = "false"
 cfgMobileMenuText = ""
 cfgSlideMenu = "true"
@@ -103,15 +103,15 @@ cfgPrivacy = ""
 '---------------------------------------
 cfgFeaturedCategory = "1" 'int [Featured Products Category #]
 cfgFeaturedTitle = "Featured Products"
-cfgFeaturedStyle = ""
+cfgFeaturedStyle = "" 'string [strike, empty for none]
 cfgFeaturedCount = "4"
 
 ' Category/Product List View
 '---------------------------------------
 cfgAccordion = "true"
 cfgAccordionDisplay = "category" 'string [category, product, both]
-cfgAccordionShowAll = "true"
-cfgBreadcrumb = "both"
+cfgAccordionShowAll = "true" 'boolean (show all categories)
+cfgBreadcrumb = "both" 'string [category, product, both, (empty for none)]
 cfgShowCatMSRP = "false"
 cfgCatMSRPLabel = ""
 cfgProdShowID = "true"
@@ -150,4 +150,5 @@ cfgFooterLinksPos = "top"
 cfgSocialFooterPos = "bottom"
 cfgFooterCopy = "All Rights Reserved"
 cfgFooterDelimiter = "&bull;"
+
 %>
