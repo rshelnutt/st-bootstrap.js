@@ -4,7 +4,6 @@
 cfgVer = "723"
 cfgSvcWorker = "true"
 cfgShopID = "1"
-cfgBread = "true"
 cfgShopName = "Template"
 cfgThemeColor = "#253992"
 
@@ -64,7 +63,7 @@ cfgMenuPos = "top" 'string [top left right none]
 cfgMenuPerfectCenter = "" 'boolean [used with menucenter in cfgBrandPos]
 cfgMenuCustom = "true"
 cfgMenuFullwidth = "false" 'mixed [false,true,contain]
-cfgDropMenuWidth = "" 'string [center, spread, empty for default]
+cfgDropMenuWidth = "" 'string [center, spread (used with cfgNavCenterLink true), empty for default]
 cfgNavCenterLink = "false"
 cfgMobileMenuText = ""
 cfgSlideMenu = "true"
@@ -99,19 +98,29 @@ cfgTerms = ""
 cfgShippingReturn = ""
 cfgPrivacy = ""
 
+' Featured Shop Settings
+'---------------------------------------
+cfgFeaturedShopCat     = "" 'int [Featured Shop Category Page #]
+cfgFeaturedShopHideCat = "1" 'array [Featured Shop Hide Cat Array - separate with #,#,#]
+cfgFeaturedShopTitle   = "Featured Shop"
+cfgFeaturedShopStyle   = "" 'string [strike, empty for none]
+cfgFeaturedShopCount   = "4"
+
 ' Featured Category Settings
 '---------------------------------------
 cfgFeaturedCategory = "1" 'int [Featured Products Category #]
-cfgFeaturedTitle = "Featured Products"
-cfgFeaturedStyle = "" 'string [strike, empty for none]
-cfgFeaturedCount = "4"
+cfgFeaturedTitle    = "Featured Products"
+cfgFeaturedStyle    = "" 'string [strike, empty for none]
+cfgFeaturedCount    = "4"
 
 ' Category/Product List View
 '---------------------------------------
 cfgAccordion = "true"
+cfgAccordionPosition = "fullwidth" '[fullwidth, inline (default)]
 cfgAccordionDisplay = "category" 'string [category, product, both]
 cfgAccordionShowAll = "true" 'boolean (show all categories)
 cfgBreadcrumb = "both" 'string [category, product, both, (empty for none)]
+cfgBreadcrumbHomeText = "" 'enter the name for the Breadcrumb top-level home link, default is "Home"
 cfgShowCatMSRP = "false"
 cfgCatMSRPLabel = ""
 cfgProdShowID = "true"
