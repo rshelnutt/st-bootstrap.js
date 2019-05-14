@@ -116,10 +116,10 @@ cfgFeaturedCount    = "4"
 ' Category/Product List View
 '---------------------------------------
 cfgAccordion = "true"
-cfgAccordionPosition = "fullwidth" '[fullwidth, inline (default)]
 cfgAccordionDisplay = "category" 'string [category, product, both]
 cfgAccordionShowAll = "true" 'boolean (show all categories)
 cfgBreadcrumb = "both" 'string [category, product, both, (empty for none)]
+cfgBreadcrumbPosition = "fullwidth" '[fullwidth, inline (default)]
 cfgBreadcrumbHomeText = "" 'enter the name for the Breadcrumb top-level home link, default is "Home"
 cfgShowCatMSRP = "false"
 cfgCatMSRPLabel = ""
