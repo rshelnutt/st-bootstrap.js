@@ -33,7 +33,7 @@ Speartek Bootstrap Framework
 - Ionicons 4.3+
 
 ## Installation
-To install, download the [latest distribution](#download) and extract all files in the */dist/* folder to your DSN's root folder.
+To install, download the [latest distribution](https://github.com/rshelnutt/st-bootstrap/zipball/master) and extract all files in the */dist/* folder to your DSN's root folder.
 
 After installation, you -must- configure the site settings. See [Config](#config) section below.
 
