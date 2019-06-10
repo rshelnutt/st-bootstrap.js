@@ -67,12 +67,13 @@ cfgDropMenuWidth = "" 'string [center, spread (used with cfgNavCenterLink true),
 cfgNavCenterLink = "false"
 cfgMobileMenuText = ""
 cfgSlideMenu = "true"
+cfgMobileTopActive = "false"
 
 ' Top Bar Settings
 '---------------------------------------
 cfgMobileTopBarBg = "" 'string [imagename.png, jpg, gif, svg]
 cfgMobileSideBarBg = "" 'string [imagename.png, jpg, gif, svg]
-cfgMobileBgOverlay = "" 'string [imagename.png, jpg, gif, svg]
+cfgMobileBgOverlay = "" 'string [hex #000000 or text color name]
 cfgMobileBgOverlayAlpha = "" 'int [1 for 100%, 0.4 for 40%, etc]
 
 ' Page Settings
