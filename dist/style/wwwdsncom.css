@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+
+/* Root Styles
+-------------------------------------------------------------------------------------*/
+:root {
+	--primary: #cc5629;
+	--accent: #cc5629;
+	--dark: #353535;
+}
+
+/* Core CSS Changes
+-------------------------------------------------------------------------------------*/
+
+/* Primary Color */
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-state-active a i,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-tabs-complete a i {
+	box-shadow: none;
+}
+
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-state-active a i,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-tabs-complete a i,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-state-active,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-tabs-complete,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-state-active a .tabArrow::before,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-tabs-complete a .tabArrow::before,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-state-active a .tabArrow::after,
+#RestCart_tabs .CheckoutBreadcrumbInner .ui-state-default.ui-tabs-complete a .tabArrow::after {
+	background: var(--primary);
+}
+
+.checkoutHeaderBG,
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:not(:disabled):not(.disabled).active,
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+	background-color: var(--primary);
+}
+
+.btn.btn-primary,
+.btn.btn-primary:hover,
+.btn.btn-primary:not(:disabled):not(.disabled).active,
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+	border-color: var(--primary);
+}
+
+/* Accent Color */
+a, a:hover { color: var(--accent) }
+
+.checkoutrequired,
+.dropdown .dropdown-menu .util-sub-register a, #checkoutContainer a:not(.ui-tabs-anchor),
+.COMProdPrice, #ProductDiscount, .openAccountDiv #openAccountHeader h3 a,
+.modalPage a, .modal-addcart .modal-title, .modal-addcart .bootCart-details .bootCart-name,
+.btn-link, .btn-link:hover, #subBar a:hover,
+.modal-addcart .bootCart-info .bootCart-count{
+	color: var(--accent) !important;
+}
+
+@media (min-width: 576px) {
+	.dropdown-item.active a, .dropdown-item:active a {
+		color: var(--primary) !important;
+	}
+}
+
+.announcement-bar, #back-to-top, .orderSummaryTitle, .COMProdButton, .dropdown .dropdown-menu .util-sub-signin a,
+.st-account-manager .nav-pills .nav-link.active,
+#SearchFormMobile .ui-widgetTN, .app-menu-burger .app-menu-line, .list-group .list-group-item.active,
+.list-group div[id^="SubCats"] .list-group-item.active {
+	background-color: var(--accent) !important;
+}
+
+.btn.btn-secondary, .btn.btn-secondary:not(:disabled):not(.disabled).active,
+.btn.btn-secondary:not(:disabled):not(.disabled):active, .btn.btn-secondary:hover {
+	background-color: var(--dark) !important;
+}
+
+.st-account-manager .account-manager-content,
+.list-group .list-group-item.active, .list-group div[id^="SubCats"] .list-group-item.active,
+.ProductThumbs .ProdThumbsBox.thumbSelected .ProductThumbGridBox,
+.dropdown .dropdown-menu .util-sub-signin a,.dropdown .dropdown-menu .util-sub-register a {
+	border-color: var(--accent) !important;
+}
+
+.btn.btn-secondary, .btn.btn-secondary:hover,
+.btn.btn-secondary:not(:disabled):not(.disabled).active,
+.btn.btn-secondary:not(:disabled):not(.disabled):active {
+	border-color: var(--dark) !important;
+}
+
+/* General
+---------------------------------------------------------------------- */
+
+/* Elements
+---------------------------------------------------------------------- */
+#back-to-top.show {
+	opacity: 0.5;
+}
+
+#back-to-top.show:hover {
+	opacity: 1;
+}
+
+/* Sub Bar
+---------------------------------------------------------------------- */
+
+/* Main Menu
+---------------------------------------------------------------------- */
+
+/* Homepage
+---------------------------------------------------------------------- */
+/* Homepage - Hero Slider ---------------------- */
+
+/* Featured Categories/Products
+---------------------------------------------------------------------- */
+
+/* Categories/Product List View
+---------------------------------------------------------------------- */
+
+/* Product View
+---------------------------------------------------------------------- */
+
+/* Footer
+---------------------------------------------------------------------- */
+
+/* @ @ @ Responsive Queries - Copy from below list
+---------------------------------------------------------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
