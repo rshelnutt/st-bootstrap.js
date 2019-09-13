@@ -131,7 +131,7 @@ cfgCatShowBrand = "true"
 cfgCatShowPartLabel = "true"
 cfgProdShortname = "false"
 cfgDiscountPercent = ""
-cfgFilterDisplay = "modal" 'string [inline, modal, empty for none]
+cfgFilterDisplay = "modal" 'string [inline, modal, (empty for none)]
 
 ' Product View
 '---------------------------------------
@@ -143,7 +143,7 @@ cfgProdMSRPLabel = "" 'variable or "string"
 
 cfgContBtnLeaveOnPage = "true"
 cfgProductReviews = "false"
-cfgZoomType = "hover" 'string [hover, interactive, empty for default]
+cfgZoomType = "interactive" 'string [hover, interactive, (empty for default)]
 
 cfgRestrictedMessageShow = "false" 'Show restricted login message (boolean)
 cfgRestrictedMessageGroup = "" 'Show restricted login message to this group (array int,int,int)
