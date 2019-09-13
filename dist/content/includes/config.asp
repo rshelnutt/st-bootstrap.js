@@ -49,7 +49,7 @@ cfgAnnouncementBar = "Top Bar Info"
 cfgSubBar = "true"
 cfgSubBarFullwidth = "false"
 cfgCustomSubBarText  = "" 'string
-cfgContactSubBarShow = ""
+cfgContactSubBarShow = "" 'string [email, phone, both, empty for default]
 cfgContactEmail = ""
 cfgContactPhone = ""
 
@@ -116,6 +116,8 @@ cfgFeaturedCount    = "4"
 
 ' Category/Product List View
 '---------------------------------------
+cfgCatBannerDisplay = "" 'string [hero, heroFull, (empty for default)]
+cfgCatBannerHeight = "" 'int
 cfgAccordion = "true"
 cfgAccordionDisplay = "category" 'string [category, product, both]
 cfgAccordionShowAll = "true" 'boolean (show all categories)
@@ -141,6 +143,7 @@ cfgProdMSRPLabel = "" 'variable or "string"
 
 cfgContBtnLeaveOnPage = "true"
 cfgProductReviews = "false"
+cfgZoomType = "hover" 'string [hover, interactive, empty for default]
 
 cfgRestrictedMessageShow = "false" 'Show restricted login message (boolean)
 cfgRestrictedMessageGroup = "" 'Show restricted login message to this group (array int,int,int)
@@ -148,11 +151,15 @@ cfgRestrictedMessageName = "" 'Name of the exclusive access group (ie. Wholesale
 
 cfgRestrictPricebreakView = "" 'Restrict view of price breaks (boolean)
 cfgHidePricebreakFromGroups = "" 'Show pricebreak to all groups except... (array int,int,int)
+
 cfgQtyInputStyle = "block" 'empty (default), circle, block
+
+cfgRelatedTitle = ""
 
 ' Checkout Settings
 '---------------------------------------
 cfgShowShippingEstimator = "false"
+cfgCheckoutCountryDefault = "US" 'string - Two character country code
 
 ' Footer Settings
 '---------------------------------------
