@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>st-bootstrap.js | Generate Instagram Access Token</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="Generate an Instagram access token using the credentials of the desired account.">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <script>
+            function genInsta(e, t) {
+                t(".auth-button").click(function() {
+                    t(".loader").addClass("visible");
+                    var e = t('[name="atgenerator_client_id"]').val().trim(),
+                        n = t('[name="atgenerator_client_secret"]').val().trim();
+                        document.cookie = "atgenerator_client_id=" + e,
+                        document.cookie = "atgenerator_client_secret=" + n;
+                    var r = t.param({
+                        client_id: e,
+                        redirect_uri: "https://elfsight.com/service/generate-instagram-access-token/",
+                        response_type: "code"
+                    });
+                    document.location.href = "https://api.instagram.com/oauth/authorize/?" + r
+                });
+
+                var e = t(".token input");
+
+                e.on("focus click", function() {
+                    e.select()
+                })
+            }(window);
+
+            genInsta()
+        </script>
+    </head>
+    <body>
+        <form class="client-form">
+            <input type="text" name="stgenerator_client_id" placeholder="Client ID">
+            <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret">
+        </form>
+    </body>
+</html>
+
+https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
