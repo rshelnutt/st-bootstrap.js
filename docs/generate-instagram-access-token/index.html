@@ -9,14 +9,13 @@
         <script>
             function genInsta(e, t) {
                 t(".auth-button").click(function() {
-                    t(".loader").addClass("visible");
-                    var e = t('[name="atgenerator_client_id"]').val().trim(),
-                        n = t('[name="atgenerator_client_secret"]').val().trim();
-                        document.cookie = "atgenerator_client_id=" + e,
-                        document.cookie = "atgenerator_client_secret=" + n;
+                    var e = t('[name="stgenerator_client_id"]').val().trim(),
+                        n = t('[name="stgenerator_client_secret"]').val().trim();
+                        document.cookie = "stgenerator_client_id=" + e,
+                        document.cookie = "stgenerator_client_secret=" + n;
                     var r = t.param({
                         client_id: e,
-                        redirect_uri: "https://elfsight.com/service/generate-instagram-access-token/",
+                        redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
                         response_type: "code"
                     });
                     document.location.href = "https://api.instagram.com/oauth/authorize/?" + r
@@ -35,9 +34,12 @@
     <body>
         <form class="client-form">
             <input type="text" name="stgenerator_client_id" placeholder="Client ID">
-            <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret">
+            <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
         </form>
+        <div class="auth">
+            <a href="javascript:void(0)" class="auth-button">Get Instagram Access Token</a>
+        </div>
     </body>
 </html>
 
-https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+<!--https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code-->
