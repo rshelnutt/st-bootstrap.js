@@ -86,7 +86,6 @@
                     }
                 }
             };
-            document.getElementsByClassName("app-name-link")[0].href = "/";
         </script>
         <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
         <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
@@ -95,5 +94,10 @@
         <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
         <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
         <script src="//unpkg.com/docsify-copy-code"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                document.getElementsByClassName("app-name-link")[0].href = "/";
+            }, false);
+        </script>
     </body>
 </html>
