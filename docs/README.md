@@ -1,6 +1,7 @@
 # st-bootstrap.js
 Speartek Bootstrap Framework
-Last Update {docsify-updated}
+
+Last Update ({docsify-updated})
 
 1. [Requirements](#requirements)
 2. [Installation](#installation)
