@@ -84,11 +84,11 @@
     <script>
         $(".auth-button").click(function() {
             console.log("clicked");
-            var e = t('[name="stgenerator_client_id"]').val().trim(),
-                n = t('[name="stgenerator_client_secret"]').val().trim();
+            var e = $('[name="stgenerator_client_id"]').val().trim(),
+                n = $('[name="stgenerator_client_secret"]').val().trim();
             document.cookie = "stgenerator_client_id=" + e,
                 document.cookie = "stgenerator_client_secret=" + n;
-            var r = t.param({
+            var r = $.param({
                 client_id: e,
                 redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
                 response_type: "code"
