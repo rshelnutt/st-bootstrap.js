@@ -18,8 +18,12 @@
                     cache: false,
                     url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=\"" + e + "\"&rank_token=0.3953592318270893",
                     success: function(data) {
-                        var userList = document.body.appendChild(document.createElement('div'));
-                        userList.id = 'userList';
+                        if (document.getElementById('userList').length > 0) {
+                            document.getElementById('userList').innerHTML = "";
+                        } else {
+                            var userList = document.body.appendChild(document.createElement('div'));
+                            userList.id = 'userList';
+                        }
                         for(var i=0;i<20;i++) {
                             console.log(i);
                             console.log(data.users);
