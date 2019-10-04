@@ -7,7 +7,138 @@
         <meta name="description" content="Generate an Instagram access token using the credentials of the desired account.">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <!-- // jQuery -->
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
+        <script>
+            function getUrlVars() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                return vars;
+            }
+
+            function getUrlParam(parameter, defaultvalue){
+                var urlparameter = defaultvalue;
+                if(window.location.href.indexOf(parameter) > -1){
+                    urlparameter = getUrlVars()[parameter];
+                }
+                return urlparameter;
+            }
+
+            function getUserList(e) {
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    cache: false,
+                    url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=\"" + e + "\"&rank_token=0.3953592318270893",
+                    success: function(data) {
+                        var q = document.getElementById('userList');
+                        if (q !== null) {
+                            var userList = q;
+                            document.getElementById('userList').innerHTML = "";
+                        } else {
+                            var userList = document.body.appendChild(document.createElement('div'));
+                            userList.id = 'userList';
+                        }
+                        for(var i=0;i<20;i++) {
+                            console.log(i);
+                            var userItem = userList.appendChild(document.createElement('div'));
+                                userItem.className = 'user_item';
+                            var instauser = data.users[i].user;
+                            userItem.innerHTML = '<a href="' + instauser.username + '" target="_blank"><h3>'+ instauser.username +'</h3><h4>' + instauser.pk + '</h4><img src="' + instauser.profile_pic_url + '"></a>';
+                        }
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status, thrownError);
+                    }
+                });
+            }
+
+            function processCode(c) {
+                $.ajax({
+                    type: "POST",
+                    dataType: "jsonp",
+                    cache: false,
+                    client_id: "5182bc5223764de78ea5e6d4081d41ca",
+                    client_secret: "db0d09c1868b4d0eb27f631074469012",
+                    code: c,
+                    redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
+                    url: "https://api.instagram.com/oauth/access_token",
+                    success: function(data) {
+                        console.log(data)
+                        var success = document.body.appendChild(document.createElement('div'));
+                        success.id = 'success';
+                        var insta = data.data;
+                        success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
+                            '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
+                            '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
+                            '<div id="instaToken"><input type="text" value="'+ e +'" readonly=""></div>' +
+                            '</div>';
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status, thrownError);
+                    }
+                });
+
+
+            }
+
+            function init() {
+                var e = getUrlParam('code','Empty');
+                // var e = '349921056.5182bc5.ecdda7788ead4b0cb35079da006c5c96';
+
+                console.log(e)
+
+
+
+
+                $.ajax({
+                    type: "GET",
+                    dataType: "jsonp",
+                    cache: false,
+                    // url: "https://api.instagram.com/v1/users/[USER_ID]/media/recent/?client_id=[CLIENT_ID]",
+                    url: "https://api.instagram.com/v1/users/self/?access_token=" + e,
+                    success: function(data) {
+                        console.log(data)
+                            var success = document.body.appendChild(document.createElement('div'));
+                            success.id = 'success';
+                            var insta = data.data;
+                            success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
+                                '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
+                                '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
+                                '<div id="instaToken"><input type="text" value="'+ e +'" readonly=""></div>' +
+                                '</div>';
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status, thrownError);
+                    }
+                });
+
+                /*$.ajax({
+                    type: "GET",
+                    dataType: "jsonp",
+                    cache: false,
+                    // url: "https://api.instagram.com/v1/users/[USER_ID]/media/recent/?client_id=[CLIENT_ID]",
+                    url: "https://api.instagram.com/v1/users/self/?access_token=" + e,
+                    success: function(data) {
+                        console.log(data)
+                            var success = document.body.appendChild(document.createElement('div'));
+                            success.id = 'success';
+                            var insta = data.data;
+                            success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
+                                '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
+                                '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
+                                '<div id="instaToken"><input type="text" value="'+ e +'" readonly=""></div>' +
+                                '</div>';
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status, thrownError);
+                    }
+                });*/
+            }
+            // window.onLoad = init();
+        </script>
     </head>
 
     <body>
@@ -16,7 +147,7 @@
 
         <form class="client-form">
             <input type="text" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
-            <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
+            <input type="text" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
         </form>
         <div class="auth">
             <a href="javascript:void(0)" class="auth-button">Get Instagram Access Token</a>
@@ -25,7 +156,31 @@
     </body>
 
     <script>
+        $(".auth-button").click(function() {
+            var e = $('[name="stgenerator_client_id"]').val().trim(),
+                n = $('[name="stgenerator_client_secret"]').val().trim();
+            document.cookie = "stgenerator_client_id=" + e,
+            document.cookie = "stgenerator_client_secret=" + n;
+            var r = $.param({
+                client_id: e,
+                redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
+                response_type: "code"
+            });
+            console.log(r)
+            document.location.href = "https://api.instagram.com/oauth/authorize/?" + r;
+            // init()
+        });
 
+        $(".get-user").click(function() {
+            var x = document.getElementById('user-search').value.trim();
+            getUserList(x);
+        });
+
+        var e = $("#instaToken input");
+
+        e.on("focus click", function() {
+            e.select()
+        });
     </script>
 </html>
 
