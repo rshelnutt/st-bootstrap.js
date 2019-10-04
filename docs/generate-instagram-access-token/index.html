@@ -64,11 +64,9 @@
                     return result;
                 }, {});
 
-                console.log(result)
-
                 var e = getUrlParam('#access_token','Empty');
 
-                console.log("Access Token: " + e)
+                console.log("Access Token: " + result.access_token);
 
                 $.ajax({
                     type: "GET",
