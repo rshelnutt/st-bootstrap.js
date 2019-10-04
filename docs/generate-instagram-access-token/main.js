@@ -4771,8 +4771,8 @@
             });
             t(".auth-button").click(function() {
                 t(".loader").addClass("visible");
-                var e = t('[name="stgenerator_client_id"]').val().trim()
-                    , n = t('[name="stgenerator_client_secret"]').val().trim();
+                var e = t('[name="stgenerator_client_id"]').val().trim(),
+                    n = t('[name="stgenerator_client_secret"]').val().trim();
                 document.cookie = "stgenerator_client_id=" + e,
                     document.cookie = "stgenerator_client_secret=" + n;
                 var r = t.param({
