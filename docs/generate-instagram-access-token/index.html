@@ -60,7 +60,8 @@
             }
             window.onLoad = init();
 
-            $(".auth-button").click(function() {
+            $(document).find(".auth-button").click(function() {
+                console.log("clicked");
                 var e = t('[name="stgenerator_client_id"]').val().trim(),
                     n = t('[name="stgenerator_client_secret"]').val().trim();
                     document.cookie = "stgenerator_client_id=" + e,
