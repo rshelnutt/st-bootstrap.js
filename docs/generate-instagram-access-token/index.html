@@ -163,7 +163,7 @@
             var r = $.param({
                 client_id: e,
                 redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
-                response_type: "code"
+                response_type: "token"
             });
             console.log(r)
             document.location.href = "https://api.instagram.com/oauth/authorize/?" + r;
