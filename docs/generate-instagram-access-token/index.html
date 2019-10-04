@@ -51,7 +51,7 @@
                             // var insta = data.data[mug];
                             var insta = data;
                             // image.innerHTML = '<a href="' + insta.link + '" target="_blank"><img src="' + insta.images.thumbnail.url + '"></a>';
-                            image.innerHTML = 'User ID:' + insta.data[id] + '   @' + insta.data[username] + '';
+                            image.innerHTML = 'User ID:' + insta.data.id + '   @' + insta.data.username + '';
                         // }
                     },
                     error: function(xhr, ajaxOptions, thrownError) {
