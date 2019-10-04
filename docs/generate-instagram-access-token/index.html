@@ -49,9 +49,9 @@
                             var image = feed.appendChild(document.createElement('li'));
                             image.className = 'insta';
                             // var insta = data.data[mug];
-                            var insta = data;
+                            var insta = data.data;
                             // image.innerHTML = '<a href="' + insta.link + '" target="_blank"><img src="' + insta.images.thumbnail.url + '"></a>';
-                            image.innerHTML = 'User ID:' + insta.data.id + '   @' + insta.data.username + '';
+                            image.innerHTML = 'User ID:' + insta.id + '   @' + insta.username + '';
                         // }
                     },
                     error: function(xhr, ajaxOptions, thrownError) {
