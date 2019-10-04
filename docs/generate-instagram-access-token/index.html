@@ -11,6 +11,33 @@
 
         <script>
 
+            function getUserList(e) {
+                // https://www.instagram.com/web/search/topsearch/?context=blended&query=%22webdevrob%22&rank_token=0.3953592318270893
+                $.ajax({
+                    type: "GET",
+                    dataType: "jsonp",
+                    cache: false,
+                    url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22" + e + "%22&rank_token=0.3953592318270893",
+                    success: function(data) {
+                        var feed = document.getElementById('instagram-feed');
+                        var userSearch = document.body.appendChild(document.createElement('div'));
+                        userSearch.id = 'userSearch';
+
+                        var userList = document.body.appendChild(document.createElement('div'));
+                        userList.id = 'userList';
+                        for(var i=0;i<20;i++) {
+                            var userItem = userList.appendChild(document.createElement('li'));
+                                userItem.className = 'user_item';
+                            var instauser = users.user[i];
+                            userItem.innerHTML = '<a href="' + instauser.username + '" target="_blank"><h3>'+ instauser.username +'</h3><img src="' + instauser.profile_pic_url + '"></a>';
+                        }
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        console.log(xhr.status, thrownError);
+                    }
+                });
+            }
+
             function init() {
                 function getUrlVars() {
                     var vars = {};
@@ -70,6 +97,9 @@
     </head>
 
     <body>
+        <input id="user-search" title="User Search" type="text" />
+        <a href="javascript:void(0)" class="get-user">Find User</a>
+
         <form class="client-form">
             <input type="text" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
             <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
@@ -93,6 +123,11 @@
             });
             document.location.href = "https://api.instagram.com/oauth/authorize/?" + r*/
             init()
+        });
+
+        $(".get-user").click(function() {
+            var x = document.getElementById('user-search').value;
+            getUserList(x);
         });
 
         var e = $(".token input");
