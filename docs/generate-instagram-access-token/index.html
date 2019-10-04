@@ -112,7 +112,7 @@
         });
 
         $(document).ready(function() {
-            var e = $("#instaToken").find('input');
+            var e = $(document).find("#instaToken").children("input");
             e.on("focus click", function() {
                 e.select()
             });
