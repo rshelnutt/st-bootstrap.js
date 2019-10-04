@@ -56,20 +56,20 @@
             }
 
             function processCode(x) {
+                var e = $('[name="stgenerator_client_id"]').val().trim()
                 $.ajax({
-                    url: "https://api.instagram.com/oauth/access_token",
-                    type: "POST",
-                    // dataType: "json",
-                    // contentType: 'application/json',
-                    contentType: 'x-www-form-urlencoded',
-                    // processData: false,
-                    data: {
+                    url: "https://www.instagram.com/oauth/authorize/?client_id=" + e + "&redirect_uri=https://devtools.speartek.com/generate-instagram-access-token/&response_type=token&scope=public_content",
+                    type: "GET",
+                    dataType: "json",
+                    contentType: 'application/json',
+                    processData: false,
+                    /*data: {
                         client_id: "5182bc5223764de78ea5e6d4081d41ca",
                         client_secret: "db0d09c1868b4d0eb27f631074469012",
                         grant_type: "authorization_code",
                         redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
                         code: x
-                    },
+                    },*/
                     cache: false,
                     success: function(data) {
                         console.log(data);
