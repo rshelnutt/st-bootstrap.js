@@ -111,11 +111,13 @@
             getUserList(x);
         });
 
-        var e = $("#instaToken input");
+        $(document).ready(function() {
+            var e = $("#instaToken").find('input');
+            e.on("focus click", function() {
+                e.select()
+            });
+        })
 
-        e.on("focus click", function() {
-            e.select()
-        });
     </script>
 </html>
 
