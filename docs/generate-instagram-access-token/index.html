@@ -58,7 +58,7 @@
             function processCode(x) {
                 var e = $('[name="stgenerator_client_id"]').val().trim()
                 $.ajax({
-                    url: "https://www.instagram.com/oauth/authorize/?client_id=" + e + "&redirect_uri=https://devtools.speartek.com/generate-instagram-access-token/&response_type=token&scope=public_content",
+                    url: "https://www.instagram.com/oauth/authorize/?client_id=" + e + "&redirect_uri=https://devtools.speartek.com/generate-instagram-access-token/&response_type=token",
                     type: "GET",
                     dataType: "json",
                     contentType: 'application/json',
