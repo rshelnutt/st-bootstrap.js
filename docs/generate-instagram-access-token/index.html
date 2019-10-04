@@ -29,7 +29,7 @@
                 }
 
                 // var e = getUrlParam('code','Empty');
-                var e = '5182bc5223764de78ea5e6d4081d41ca';
+                var e = '1ce798169d5041c1ad2f4d5fba4b4a3a';
 
                 $.ajax({
                     type: "GET",
@@ -50,6 +50,7 @@
                             image.className = 'insta';
                             // var insta = data.data[mug];
                             var insta = data;
+                            console.log(insta)
                             // image.innerHTML = '<a href="' + insta.link + '" target="_blank"><img src="' + insta.images.thumbnail.url + '"></a>';
                             image.innerHTML = '' + insta.id + '' + insta.username + '';
                         // }
