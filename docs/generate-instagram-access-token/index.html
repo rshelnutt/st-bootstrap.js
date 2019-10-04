@@ -29,6 +29,10 @@
                         var userList = document.body.appendChild(document.createElement('div'));
                         userList.id = 'userList';
                         for(var i=0;i>0;i++) {
+                            console.log(i)
+                            console.log(data.users)
+                            console.log(data.users[i])
+
                             var userItem = userList.appendChild(document.createElement('li'));
                                 userItem.className = 'user_item';
                             var instauser = data.users[i].user;
@@ -101,7 +105,7 @@
 
     <body>
         <input id="user-search" title="User Search" type="text" />
-        <a href="javascript:void(0)" class="get-user">Find User 2</a>
+        <a href="javascript:void(0)" class="get-user">Find User 3</a>
 
         <form class="client-form">
             <input type="text" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
