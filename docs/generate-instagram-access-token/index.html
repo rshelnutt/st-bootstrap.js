@@ -19,7 +19,7 @@
                     url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=\"" + e + "\"&rank_token=0.3953592318270893",
                     success: function(data) {
                         var q = document.getElementById('userList');
-                        if (q != null && q.length > 0) {
+                        if (q !== null) {
                             document.getElementById('userList').innerHTML = "";
                         } else {
                             var userList = document.body.appendChild(document.createElement('div'));
