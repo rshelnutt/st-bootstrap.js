@@ -10,6 +10,21 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
         <script>
+            function getUrlVars() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                return vars;
+            }
+
+            function getUrlParam(parameter, defaultvalue){
+                var urlparameter = defaultvalue;
+                if(window.location.href.indexOf(parameter) > -1){
+                    urlparameter = getUrlVars()[parameter];
+                }
+                return urlparameter;
+            }
 
             function getUserList(e) {
                 $.ajax({
@@ -41,24 +56,9 @@
             }
 
             function init() {
-                function getUrlVars() {
-                    var vars = {};
-                    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-                        vars[key] = value;
-                    });
-                    return vars;
-                }
-
-                function getUrlParam(parameter, defaultvalue){
-                    var urlparameter = defaultvalue;
-                    if(window.location.href.indexOf(parameter) > -1){
-                        urlparameter = getUrlVars()[parameter];
-                    }
-                    return urlparameter;
-                }
-
                 var e = getUrlParam('code','Empty');
                 // var e = '349921056.5182bc5.ecdda7788ead4b0cb35079da006c5c96';
+
                 console.log(e)
 
                 $.ajax({
