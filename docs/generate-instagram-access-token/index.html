@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="description" content="Generate an Instagram access token using the credentials of the desired account.">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <!-- // jQuery -->
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
         <script>
@@ -109,9 +108,7 @@
                 redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
                 response_type: "token"
             });
-            console.log(r)
             document.location.href = "https://api.instagram.com/oauth/authorize/?" + r;
-            // init()
         });
 
         $(".get-user").click(function() {
@@ -121,5 +118,5 @@
 
     </script>
 </html>
-
+<!--https://www.instagram.com/webdevrob/?__a=1-->
 <!--https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code-->
