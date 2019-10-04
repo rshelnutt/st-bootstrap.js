@@ -10,22 +10,6 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
         <script>
-            function getUrlVars() {
-                var vars = {};
-                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-                    vars[key] = value;
-                });
-                return vars;
-            }
-
-            function getUrlParam(parameter, defaultvalue){
-                var urlparameter = defaultvalue;
-                if(window.location.href.indexOf(parameter) > -1){
-                    urlparameter = getUrlVars()[parameter];
-                }
-                return urlparameter;
-            }
-
             function getUserList(e) {
                 $.ajax({
                     type: "GET",
@@ -56,17 +40,13 @@
             }
 
             function init() {
-                var hash = window.location.hash.substr(1);
-
-                var result = hash.split('&').reduce(function (result, item) {
-                    var parts = item.split('=');
-                    result[parts[0]] = parts[1];
-                    return result;
-                }, {});
-
-                var e = getUrlParam('#access_token','Empty');
-
-                console.log("Access Token: " + result.access_token);
+                var hash = window.location.hash.substr(1),
+                    result = hash.split('&').reduce(function (result, item) {
+                        var parts = item.split('=');
+                        result[parts[0]] = parts[1];
+                        return result;
+                    }, {}),
+                    e = result.access_token;
 
                 $.ajax({
                     type: "GET",
@@ -89,28 +69,6 @@
                         console.log(xhr.status, thrownError);
                     }
                 });
-
-                /*$.ajax({
-                    type: "GET",
-                    dataType: "jsonp",
-                    cache: false,
-                    // url: "https://api.instagram.com/v1/users/[USER_ID]/media/recent/?client_id=[CLIENT_ID]",
-                    url: "https://api.instagram.com/v1/users/self/?access_token=" + e,
-                    success: function(data) {
-                        console.log(data)
-                            var success = document.body.appendChild(document.createElement('div'));
-                            success.id = 'success';
-                            var insta = data.data;
-                            success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
-                                '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
-                                '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
-                                '<div id="instaToken"><input type="text" value="'+ e +'" readonly=""></div>' +
-                                '</div>';
-                    },
-                    error: function(xhr, ajaxOptions, thrownError) {
-                        console.log(xhr.status, thrownError);
-                    }
-                });*/
             }
             window.onLoad = init();
         </script>
