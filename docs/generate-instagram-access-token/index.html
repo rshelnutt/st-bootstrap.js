@@ -18,6 +18,9 @@
                     type: "GET",
                     dataType: "json",
                     cache: false,
+                    /*headers: {
+                        'Content-Type':'application/json'
+                    },*/
                     // url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22" + setVal + "%22&rank_token=0.3953592318270893",
                     // encodeURIComponent(
                     url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=\"webdevrob\"&rank_token=0.3953592318270893",
@@ -25,7 +28,7 @@
                         console.log(data)
                         var userList = document.body.appendChild(document.createElement('div'));
                         userList.id = 'userList';
-                        for(var i=0;i<20;i++) {
+                        for(var i=0;i>0;i++) {
                             var userItem = userList.appendChild(document.createElement('li'));
                                 userItem.className = 'user_item';
                             var instauser = data.users.user[i];
