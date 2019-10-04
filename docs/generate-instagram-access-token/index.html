@@ -20,6 +20,7 @@
                     // url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22" + setVal + "%22&rank_token=0.3953592318270893",
                     url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22webdevrob%22&rank_token=0.3953592318270893",
                     success: function(data) {
+                        console.log(data)
                         var userList = document.body.appendChild(document.createElement('div'));
                         userList.id = 'userList';
                         for(var i=0;i<20;i++) {
@@ -123,7 +124,7 @@
         });
 
         $(".get-user").click(function() {
-            var x = document.getElementById('user-search').value;
+            var x = $('#user-search').val().trim();
             getUserList(x);
         });
 
