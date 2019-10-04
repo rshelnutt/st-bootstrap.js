@@ -46,12 +46,18 @@
                         // for(var mug=0;mug<10;mug++) {
                             // create <li> element and append to the #instagram-feed
                             // then for each object element, add the appropriate content
-                            var image = feed.appendChild(document.createElement('li'));
-                            image.className = 'insta';
+                            // var image = feed.appendChild(document.createElement('li'));
+                            var success = document.body.appendChild(document.createElement('div'));
+                            // image.className = 'insta';
+                            success.attr.id = 'success';
                             // var insta = data.data[mug];
                             var insta = data.data;
                             // image.innerHTML = '<a href="' + insta.link + '" target="_blank"><img src="' + insta.images.thumbnail.url + '"></a>';
-                            image.innerHTML = 'User ID:' + insta.id + '   @' + insta.username + '';
+                            success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
+                                '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
+                                '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
+                                '<div id="instaToken"><input type="text" value="" readonly=""></div>' +
+                                '</div>';
                         // }
                     },
                     error: function(xhr, ajaxOptions, thrownError) {
@@ -62,31 +68,24 @@
             // window.onLoad = init();
         </script>
     </head>
+
     <body>
         <form class="client-form">
-            <input type="text" name="stgenerator_client_id" placeholder="Client ID">
+            <input type="text" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
             <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
         </form>
         <div class="auth">
             <a href="javascript:void(0)" class="auth-button">Get Instagram Access Token</a>
         </div>
-        <div class="inner wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-            <h1>You've got the Access Token</h1>
-            <div class="paragraph">
-                Congratulations, @webdevrob! You've just got your own Instagram Access Token. Now you can specify<br>it as an accessToken option in <a target="_blank" href="https://elfsight.com/instagram-feed-instashow/jquery/">InstaShow</a>
-                and <a target="_blank" href="https://elfsight.com/instagram-widget-instalink/jquery/">InstaLink</a>.
-            </div>
-            <div class="token">
-                <input type="text" value="" readonly="">
-            </div>
-        </div>
-    <div id="instagram-feed"></div>
+        <div id="instagram-feed"></div>
+    </body>
+
     <script>
         $(".auth-button").click(function() {
             var e = $('[name="stgenerator_client_id"]').val().trim(),
                 n = $('[name="stgenerator_client_secret"]').val().trim();
-                document.cookie = "stgenerator_client_id=" + e,
-                document.cookie = "stgenerator_client_secret=" + n;
+                // document.cookie = "stgenerator_client_id=" + e,
+                // document.cookie = "stgenerator_client_secret=" + n;
             /*var r = $.param({
                 client_id: e,
                 redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
@@ -102,7 +101,6 @@
             e.select()
         });
     </script>
-    </body>
 </html>
 
 <!--https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code-->
