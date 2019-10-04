@@ -18,7 +18,8 @@
                     cache: false,
                     url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=\"" + e + "\"&rank_token=0.3953592318270893",
                     success: function(data) {
-                        if (document.getElementById('userList').length > 0) {
+                        var q = document.getElementById('userList');
+                        if (q != null && q.length > 0) {
                             document.getElementById('userList').innerHTML = "";
                         } else {
                             var userList = document.body.appendChild(document.createElement('div'));
