@@ -68,8 +68,8 @@
                             success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
                                 '<div><img src="' + insta.profile_picture + '"/></div>\n' +
                                 '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
-                                '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
-                                '<div id="instaToken"><input type="text" value="'+ e +'" readonly=""></div>' +
+                                '<div id="instaID"><label for="instaID">User ID:</label><input name="instaID" type="text" value="' + insta.id + '" readonly=""></div>\n' +
+                                '<div id="instaToken"><label for="instaID">Access Token:</label><input name="instaToken" type="text" value="'+ e +'" readonly=""></div>' +
                                 '</div>';
                             selToken();
                         },
@@ -88,9 +88,10 @@
         <a href="javascript:void(0)" class="get-user">Find User</a>
 
         <form class="client-form">
-            <input type="text" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
-            <input type="text" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
+            <input type="hidden" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
+            <input type="hidden" name="stgenerator_client_secret" placeholder="Client Secret" value="db0d09c1868b4d0eb27f631074469012">
         </form>
+
         <div class="auth">
             <a href="javascript:void(0)" class="auth-button">Get Instagram Access Token</a>
         </div>
