@@ -59,6 +59,7 @@
 
                 var e = getUrlParam('code','Empty');
                 // var e = '349921056.5182bc5.ecdda7788ead4b0cb35079da006c5c96';
+                console.log(e)
 
                 $.ajax({
                     type: "GET",
@@ -103,8 +104,8 @@
         $(".auth-button").click(function() {
             var e = $('[name="stgenerator_client_id"]').val().trim(),
                 n = $('[name="stgenerator_client_secret"]').val().trim();
-                document.cookie = "stgenerator_client_id=" + e,
-                document.cookie = "stgenerator_client_secret=" + n;
+            document.cookie = "stgenerator_client_id=" + e,
+            document.cookie = "stgenerator_client_secret=" + n;
             var r = $.param({
                 client_id: e,
                 redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
