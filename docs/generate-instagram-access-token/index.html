@@ -112,8 +112,9 @@
                 redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
                 response_type: "code"
             });
-            document.location.href = "https://api.instagram.com/oauth/authorize/?" + r;
-            init()
+            console.log(r)
+            // document.location.href = "https://api.instagram.com/oauth/authorize/?" + r;
+            // init()
         });
 
         $(".get-user").click(function() {
