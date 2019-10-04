@@ -17,7 +17,8 @@
                     type: "GET",
                     dataType: "jsonp",
                     cache: false,
-                    url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22" + setVal + "%22&rank_token=0.3953592318270893",
+                    // url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22" + setVal + "%22&rank_token=0.3953592318270893",
+                    url: "https://www.instagram.com/web/search/topsearch/?context=blended&query=%22webdevrob%22&rank_token=0.3953592318270893",
                     success: function(data) {
                         var userList = document.body.appendChild(document.createElement('div'));
                         userList.id = 'userList';
@@ -94,7 +95,7 @@
 
     <body>
         <input id="user-search" title="User Search" type="text" />
-        <a href="javascript:void(0)" class="get-user">Find User 1</a>
+        <a href="javascript:void(0)" class="get-user">Find User 2</a>
 
         <form class="client-form">
             <input type="text" name="stgenerator_client_id" placeholder="Client ID" value="5182bc5223764de78ea5e6d4081d41ca">
