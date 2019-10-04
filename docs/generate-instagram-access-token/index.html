@@ -8,13 +8,31 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <script>
 
-
             function init() {
+                function getUrlVars() {
+                    var vars = {};
+                    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                        vars[key] = value;
+                    });
+                    return vars;
+                }
+
+                function getUrlParam(parameter, defaultvalue){
+                    var urlparameter = defaultvalue;
+                    if(window.location.href.indexOf(parameter) > -1){
+                        urlparameter = getUrlVars()[parameter];
+                    }
+                    return urlparameter;
+                }
+
+                var e = getUrlParam('code','Empty');
+
                 $.ajax({
                     type: "GET",
                     dataType: "jsonp",
                     cache: false,
-                    url: "https://api.instagram.com/v1/users/[USER_ID]/media/recent/?client_id=[CLIENT_ID]",
+                    // url: "https://api.instagram.com/v1/users/[USER_ID]/media/recent/?client_id=[CLIENT_ID]",
+                    url: "https://api.instagram.com/v1/users/self/?access_token=" + e,
                     success: function(data) {
                         // set the space you'll be working with in your index.html file
                         var feed = document.getElementById('instagram-feed');
@@ -27,7 +45,8 @@
                             var image = feed.appendChild(document.createElement('li'));
                             image.className = 'insta';
                             var insta = data.data[mug];
-                            image.innerHTML = '<a href="' + insta.link + '" target="_blank"><img src="' + insta.images.thumbnail.url + '"></a>';
+                            // image.innerHTML = '<a href="' + insta.link + '" target="_blank"><img src="' + insta.images.thumbnail.url + '"></a>';
+                            image.innerHTML = '' + insta.id + '' + insta.username + '';
                         }
                     },
                     error: function(xhr, ajaxOptions, thrownError) {
@@ -35,13 +54,7 @@
                     }
                 });
             }
-
             window.onLoad = init();
-
-
-
-
-
 
             $(".auth-button").click(function() {
                 var e = t('[name="stgenerator_client_id"]').val().trim(),
@@ -83,6 +96,7 @@
             </div>
             <div class="paragraph paragraph-remark">Be sure <a href="/">elfsight.com</a> will never use your Access Token and forget it as soon as you <a href="/service/generate-instagram-access-token/">refresh</a> the page.</div>
         </div>
+    <div id="instagram-feed"></div>
     </body>
 </html>
 
