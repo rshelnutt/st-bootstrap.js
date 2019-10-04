@@ -59,27 +59,6 @@
                 });
             }
             window.onLoad = init();
-
-            $(document).find(".auth-button").click(function() {
-                console.log("clicked");
-                var e = t('[name="stgenerator_client_id"]').val().trim(),
-                    n = t('[name="stgenerator_client_secret"]').val().trim();
-                    document.cookie = "stgenerator_client_id=" + e,
-                    document.cookie = "stgenerator_client_secret=" + n;
-                var r = t.param({
-                    client_id: e,
-                    redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
-                    response_type: "code"
-                });
-                document.location.href = "https://api.instagram.com/oauth/authorize/?" + r
-            });
-
-            var e = $(".token input");
-
-            e.on("focus click", function() {
-                e.select()
-            });
-
         </script>
     </head>
     <body>
@@ -102,6 +81,27 @@
             <div class="paragraph paragraph-remark">Be sure <a href="/">elfsight.com</a> will never use your Access Token and forget it as soon as you <a href="/service/generate-instagram-access-token/">refresh</a> the page.</div>
         </div>
     <div id="instagram-feed"></div>
+    <script>
+        $(".auth-button").click(function() {
+            console.log("clicked");
+            var e = t('[name="stgenerator_client_id"]').val().trim(),
+                n = t('[name="stgenerator_client_secret"]').val().trim();
+            document.cookie = "stgenerator_client_id=" + e,
+                document.cookie = "stgenerator_client_secret=" + n;
+            var r = t.param({
+                client_id: e,
+                redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
+                response_type: "code"
+            });
+            document.location.href = "https://api.instagram.com/oauth/authorize/?" + r
+        });
+
+        var e = $(".token input");
+
+        e.on("focus click", function() {
+            e.select()
+        });
+    </script>
     </body>
 </html>
 
