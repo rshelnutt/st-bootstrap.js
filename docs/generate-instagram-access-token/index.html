@@ -68,13 +68,14 @@
                     // url: "https://api.instagram.com/v1/users/[USER_ID]/media/recent/?client_id=[CLIENT_ID]",
                     url: "https://api.instagram.com/v1/users/self/?access_token=" + e,
                     success: function(data) {
+                        console.log(data)
                             var success = document.body.appendChild(document.createElement('div'));
                             success.id = 'success';
                             var insta = data.data;
                             success.innerHTML = '<h1>You\'ve got the Access Token</h1>\n' +
                                 '<div>Congratulations, @' + insta.username + '! You\'ve just got your own Instagram Access Token.</div>\n' +
                                 '<div id="instaID"><input type="text" value="' + insta.id + '" readonly=""></div>\n' +
-                                '<div id="instaToken"><input type="text" value="" readonly=""></div>' +
+                                '<div id="instaToken"><input type="text" value="'+ e +'" readonly=""></div>' +
                                 '</div>';
                     },
                     error: function(xhr, ajaxOptions, thrownError) {
