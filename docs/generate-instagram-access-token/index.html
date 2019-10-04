@@ -58,7 +58,7 @@
             function processCode(c) {
                 $.ajax({
                     type: "POST",
-                    dataType: "jsonp",
+                    dataType: "json",
                     cache: false,
                     client_id: "5182bc5223764de78ea5e6d4081d41ca",
                     client_secret: "db0d09c1868b4d0eb27f631074469012",
@@ -80,8 +80,6 @@
                         console.log(xhr.status, thrownError);
                     }
                 });
-
-
             }
 
             function init() {
