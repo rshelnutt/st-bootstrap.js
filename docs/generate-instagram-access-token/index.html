@@ -55,18 +55,23 @@
                 });
             }
 
-            function processCode(c) {
+            function processCode(x) {
                 $.ajax({
+                    url: "https://api.instagram.com/oauth/access_token",
                     type: "POST",
                     dataType: "json",
+                    contentType: 'application/json',
+                    processData: false,
+                    data: {
+                        client_id: "5182bc5223764de78ea5e6d4081d41ca",
+                        client_secret: "db0d09c1868b4d0eb27f631074469012",
+                        grant_type: authorization_code,
+                        redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
+                        code: x
+                    },
                     cache: false,
-                    client_id: "5182bc5223764de78ea5e6d4081d41ca",
-                    client_secret: "db0d09c1868b4d0eb27f631074469012",
-                    code: c,
-                    redirect_uri: "https://devtools.speartek.com/generate-instagram-access-token/",
-                    url: "https://api.instagram.com/oauth/access_token",
                     success: function(data) {
-                        console.log(data)
+                        console.log(data);
                         var success = document.body.appendChild(document.createElement('div'));
                         success.id = 'success';
                         var insta = data.data;
@@ -85,12 +90,7 @@
             function init() {
                 var e = getUrlParam('code','Empty');
                 // var e = '349921056.5182bc5.ecdda7788ead4b0cb35079da006c5c96';
-
                 console.log(e)
-
-
-
-
                 $.ajax({
                     type: "GET",
                     dataType: "jsonp",
