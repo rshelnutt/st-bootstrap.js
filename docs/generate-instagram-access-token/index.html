@@ -56,9 +56,19 @@
             }
 
             function init() {
-                var e = getUrlParam('access_token','Empty');
+                var hash = window.location.hash.substr(1);
 
-                console.log(e)
+                var result = hash.split('&').reduce(function (result, item) {
+                    var parts = item.split('=');
+                    result[parts[0]] = parts[1];
+                    return result;
+                }, {});
+
+                console.log(result)
+
+                var e = getUrlParam('#access_token','Empty');
+
+                console.log("Access Token: " + e)
 
                 $.ajax({
                     type: "GET",
