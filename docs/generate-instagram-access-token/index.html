@@ -12,6 +12,7 @@
         <script>
 
             function getUserList(setVal) {
+                console.log("ran 2")
                 // https://www.instagram.com/web/search/topsearch/?context=blended&query=%22webdevrob%22&rank_token=0.3953592318270893
                 $.ajax({
                     type: "GET",
@@ -124,6 +125,8 @@
         });
 
         $(".get-user").click(function() {
+            alert("ran 0")
+            console.log("ran 1")
             var x = $('#user-search').val().trim();
             getUserList(x);
         });
