@@ -62,6 +62,22 @@ Lorem ipsum dolor
 
     cfgZoomType = "interactive" 'string [hover, interactive, empty for default]
     
+## cfgThumbPrefix
+- Type: ``
+- Default: `ct1_`
+
+Manually set the prefix for the thumbnails.
+
+    cfgThumbPrefix = "mn_"
+    
+## cfgSocialShareStyle
+- Type: `string`
+- Options: `rounded`,`flat`,`[empty for boxed]`
+
+Change the AddThis icon styles.
+
+    cfgSocialShareStyle = "rounded"
+    
 
 ## cfgRestrictedMessageShow
 - Type: ``
