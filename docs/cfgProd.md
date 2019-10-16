@@ -72,7 +72,7 @@ Manually set the prefix for the thumbnails.
     
 ## cfgSocialShareStyle
 - Type: `string`
-- Options: `rounded`,`flat`,`[empty for boxed]`
+- Options: `round`,`flat`,`[empty for boxed]`
 
 Change the AddThis icon styles.
 
