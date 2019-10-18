@@ -14,13 +14,12 @@ Define the display for the boot-CategoryImageHeader.asp block.
     cfgCatBannerDisplay = "true"
 
 ## cfgCatBannerHeight
-- Type: `string`
+- Type: `int`
 - Default: `[none]`
-- Options: `hero`, `herofull`,`[empty for default]`
 
-Define the height of the boot-CategoryImageHeader.asp block.
+Define the height (in pixels) of the boot-CategoryImageHeader.asp block - *do not include* the measurement unit. 
 
-    cfgCatBannerHeight = "true"
+    cfgCatBannerHeight = "350"
 
 ## cfgAccordion
 - Type: `Boolean`
