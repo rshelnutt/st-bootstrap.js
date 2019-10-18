@@ -4,6 +4,24 @@
 
 ---
 
+## cfgCatBannerDisplay
+- Type: `string`
+- Default: `[none]`
+- Options: `hero`, `herofull`,`[empty for default]`
+
+Define the display for the boot-CategoryImageHeader.asp block.
+
+    cfgCatBannerDisplay = "true"
+
+## cfgCatBannerHeight
+- Type: `string`
+- Default: `[none]`
+- Options: `hero`, `herofull`,`[empty for default]`
+
+Define the height of the boot-CategoryImageHeader.asp block.
+
+    cfgCatBannerHeight = "true"
+
 ## cfgAccordion
 - Type: `Boolean`
 - Default: `false`

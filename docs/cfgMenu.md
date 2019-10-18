@@ -112,3 +112,11 @@ Change the default text of the main menu on mobile devices.
 Specify whether or not the slide-out menu should be enabled on mobile devices.
 
     cfgSlideMenu = "true"
+    
+## cfgMobileTopActive
+- Type: `Boolean`
+- Default: `true`
+
+Specify whether or not the top-level accordion links in mobile menus are clickable.
+
+    cfgMobileTopActive = "true"

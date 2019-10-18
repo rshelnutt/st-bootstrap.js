@@ -49,6 +49,7 @@ cfgAnnouncementBar = "Top Bar Info"
 cfgSubBar = "true"
 cfgSubBarFullwidth = "false"
 cfgCustomSubBarText  = "" 'string
+cfgSubBarInlineUtils = ""
 cfgContactSubBarShow = "" 'string [email, phone, both, empty for default]
 cfgContactEmail = ""
 cfgContactPhone = ""
@@ -132,9 +133,11 @@ cfgCatShowPartLabel = "true"
 cfgProdShortname = "false"
 cfgDiscountPercent = ""
 cfgFilterDisplay = "modal" 'string [inline, modal, (empty for none)]
+cfgQuickOrder = ""
 
 ' Product View
 '---------------------------------------
+cfgOpenDesc = "true"
 cfgOpenDescDesktop = "true"
 cfgOpenDescMobile = "true"
 
@@ -144,6 +147,10 @@ cfgProdMSRPLabel = "" 'variable or "string"
 cfgContBtnLeaveOnPage = "true"
 cfgProductReviews = "false"
 cfgZoomType = "interactive" 'string [hover, interactive, (empty for default)]
+
+cfgThumbPrefix = ""
+
+cfgSocialShareStyle = "" 'string - round,flat,[empty for boxed]
 
 cfgRestrictedMessageShow = "false" 'Show restricted login message (boolean)
 cfgRestrictedMessageGroup = "" 'Show restricted login message to this group (array int,int,int)

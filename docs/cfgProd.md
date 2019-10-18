@@ -4,6 +4,14 @@
 
 ---
 
+## cfgOpenDesc
+- Type: `boolean`
+- Default: `true`
+
+Enable/disable collapsible description on product pages.
+
+    cfgOpenDesc = "true"
+
 ## cfgOpenDescDesktop
 - Type: ``
 - Default: ``
@@ -20,7 +28,6 @@ Lorem ipsum dolor
 
     cfgOpenDescMobile = "true"
     
-
 ## cfgShowProdMSRP
 - Type: ``
 - Default: ``
@@ -37,7 +44,6 @@ Lorem ipsum dolor
 
     cfgProdMSRPLabel = "" 'variable or "string"
     
-
 ## cfgContBtnLeaveOnPage
 - Type: ``
 - Default: ``
@@ -78,7 +84,6 @@ Change the AddThis icon styles.
 
     cfgSocialShareStyle = "rounded"
     
-
 ## cfgRestrictedMessageShow
 - Type: ``
 - Default: ``
@@ -103,7 +108,6 @@ Lorem ipsum dolor
 
     cfgRestrictedMessageName = "Wholesale" 'Name of the exclusive access group (ie. Wholesale)
     
-
 ## cfgRestrictPricebreakView
 - Type: ``
 - Default: ``
@@ -120,7 +124,6 @@ Lorem ipsum dolor
 
     cfgHidePricebreakFromGroups = "5" 'Show pricebreak to all groups except... (array int,int,int)
     
-
 ## cfgQtyInputStyle
 - Type: ``
 - Default: ``
@@ -128,3 +131,11 @@ Lorem ipsum dolor
 Lorem ipsum dolor
 
     cfgQtyInputStyle = "block" 'empty (default), circle, block
+    
+## cfgRelatedTitle
+- Type: ``
+- Default: ``
+
+Lorem ipsum dolor
+
+    cfgRelatedTitle = "block" 'empty (default), circle, block
