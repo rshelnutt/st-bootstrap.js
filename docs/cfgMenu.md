@@ -97,13 +97,17 @@ Automatically center the text of main menu links and give them equal widths.
 
     cfgNavCenterLink = "true"
     
+
 ## cfgMobileMenuType
 - Type: `String`
-- Default: Accordion drop-down menu 
+- Default: Accordion drop-down menu
 - Options: `inline`,`sidebar`,`both`,`[empty for default]`
 
-    cfgMobileMenuType = "both"    
+Set the display type of the mobile navigation bar.
+
+    cfgMobileMenuType = "both"
     
+
 ## cfgMobileMenuText
 - Type: `String`
 - Default: `Shop`
