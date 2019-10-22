@@ -66,6 +66,7 @@ cfgMenuCustom = "true"
 cfgMenuFullwidth = "false" 'mixed [false,true,contain]
 cfgDropMenuWidth = "" 'string [center, spread (used with cfgNavCenterLink true), empty for default]
 cfgNavCenterLink = "false"
+cfgMobileMenuType = "" 'string [inline, sidebar, both, empty for default]
 cfgMobileMenuText = ""
 cfgSlideMenu = "true"
 cfgMobileTopActive = "false"
