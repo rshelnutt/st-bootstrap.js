@@ -5,6 +5,7 @@ cfgVer = "723"
 cfgSvcWorker = "true"
 cfgShopID = "1"
 cfgShopName = "Template"
+cfgIconFolder = "images"
 cfgThemeColor = "#253992"
 
 ' Integration Settings

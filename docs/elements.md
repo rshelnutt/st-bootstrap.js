@@ -8,7 +8,7 @@ A top bar can be added to the site by configuring your config.asp file. This top
 ---
 
 ## Hero
-No super powers needed. Automatically construct a hero image from your media with ease. Simply attach the `.hero` class to a &lt;div&gt; containing your &lt;img&gt;.
+No super powers needed. Automatically construct a hero image from your media with ease. Simply attach the `.hero` class to a &lt;div&gt; containing your &lt;img&gt;. Use with the [.fullwidth](/structure?id=fullwidth) class to get the perfect layout across your screen.
 
 ###### **[Example]**
 ```html
