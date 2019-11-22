@@ -1,6 +1,6 @@
 # st-bootstrap.js
 Speartek Bootstrap Framework<br>
-Last Update ({docsify-updated})
+Docs Updated ({docsify-updated})
 
 <p>
     <img style="margin-right: 0.25rem;" src="https://img.shields.io/badge/build-passing-green?style=flat-square" data-no-zoom>
