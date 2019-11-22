@@ -144,11 +144,31 @@ Set the display position and type of Filters for Category views.
     cfgFilterDisplay = "sidebar"
     
 ## cfgQuickOrder
-- Status: _WIP_
 - Type: `Boolean`
 - Default: `false`
-- ToDo: Add option to assign quick order view page ID. Pending development of clean Quick Order for 723.
 
-Enable the quick order toggle option for category views.
+Enable the Quick Order view option for Category views.
 
     cfgQuickOrder = "true"
+    
+## cfgQuickOrderDefault
+- Type: `boolean`
+- Default: `false`
+
+Set Quick Order as the default Category view for all categories, _except_ for those identified in [cfgQuickOrderAltCategory](#cfgQuickOrderAltCategory).
+
+    cfgQuickOrderDefault = "true"
+    
+## cfgQuickOrderAltCategory
+- Type: `array`
+
+Comma separated list of Category ID #s to be excluded from the [cfgQuickOrderDefault](#cfgQuickOrderDefault) option. All Category ID #s listed will maintain the grid view as the default.
+
+    cfgQuickOrderAltCategory = "1,4,7,14"
+    
+## cfgQuickOrderAccess
+- Type: `array`
+
+If configured, restricts view access of Quick Order to ___only___ the listed Group ID #s. Quick Order will be disabled for all other groups.
+
+    cfgQuickOrderAccess = "6,7"
