@@ -6,7 +6,7 @@ Docs Updated ({docsify-updated})
     <img style="margin-right: 0.25rem;" src="https://img.shields.io/badge/build-passing-green?style=flat-square" data-no-zoom>
     <img style="margin-right: 0.25rem;" src="https://img.shields.io/badge/release-Athena-blue?style=flat-square" data-no-zoom>
     <img style="margin-right: 0.25rem;" src="https://img.shields.io/github/issues-raw/rshelnutt/st-bootstrap.js?style=flat-square" data-no-zoom>
-    <img style="margin-right: 0.25rem;" src="https://img.shields.io/github/release-date/rshelnutt/st-bootstrap?color=e22171&amp;style=flat-square" data-no-zoom>
+    <img style="margin-right: 0.25rem;" src="https://img.shields.io/github/release-date/rshelnutt/st-bootstrap?label=latest release date&color=e22171&amp;style=flat-square" data-no-zoom>
     <img src="https://img.shields.io/badge/required-speartek%20v723+-orange?style=flat-square" data-no-zoom>
 </p>
 <p>
