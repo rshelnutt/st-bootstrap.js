@@ -15,7 +15,7 @@ Last Update ({docsify-updated})
     </a>
 </p>
 
-1. [Requirements](setup/#requirements)
+1. [Requirements](setup.md#requirements)
 2. [Installation](#installation)
 3. [Config](#config)
 4. [Structure](#structure)
