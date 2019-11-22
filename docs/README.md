@@ -1,4 +1,4 @@
-<div style="text-align: center;>
+<div style="text-align: center;">
 # st-bootstrap.js
 Speartek Bootstrap Framework
 </div>
