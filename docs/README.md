@@ -1,5 +1,7 @@
+<div style="text-align: center;>
 # st-bootstrap.js
 Speartek Bootstrap Framework
+</div>
 
 <p align="center">
     <img src="https://img.shields.io/badge/build-passing-green?style=flat-square" data-no-zoom>
