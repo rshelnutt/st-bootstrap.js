@@ -1,13 +1,9 @@
 # st-bootstrap.js
 Speartek Bootstrap Framework
 
-<img src="https://img.shields.io/badge/build-passing-green?style=flat-square">
-<img src="https://img.shields.io/github/issues-raw/rshelnutt/st-bootstrap.js?style=flat-square">
-<img src="https://img.shields.io/github/v/release/rshelnutt/st-bootstrap?style=flat-square">
-
-<img src="https://img.shields.io/github/release-date/rshelnutt/st-bootstrap?color=e22171&amp;style=flat-square">
-
-<img src="https://img.shields.io/badge/required-speartek%20723+-orange?style=flat-square">
+<div><img src="https://img.shields.io/badge/build-passing-green?style=flat-square"><img src="https://img.shields.io/github/issues-raw/rshelnutt/st-bootstrap.js?style=flat-square"></div>
+<div><img src="https://img.shields.io/github/v/release/rshelnutt/st-bootstrap?style=flat-square"><img src="https://img.shields.io/github/release-date/rshelnutt/st-bootstrap?color=e22171&amp;style=flat-square"></div>
+<div><img src="https://img.shields.io/badge/required-speartek%20723+-orange?style=flat-square"></div>
 
 Last Update ({docsify-updated})
 
