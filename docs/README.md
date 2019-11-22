@@ -1,5 +1,5 @@
 # st-bootstrap.js
-Speartek Bootstrap Framework
+Speartek Bootstrap Framework<br>
 Last Update ({docsify-updated})
 
 <p>
