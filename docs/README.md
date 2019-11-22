@@ -1,14 +1,21 @@
 # st-bootstrap.js
 Speartek Bootstrap Framework
 
-
+<div>
 ![Build](https://img.shields.io/badge/build-passing-green?style=flat-square ":no-zoom")
+&nbsp;
+![Build](https://img.shields.io/github/issues-raw/rshelnutt/st-bootstrap.js?style=flat-square ":no-zoom")
+</div>
 
 <div>
-<img src="https://img.shields.io/github/issues-raw/rshelnutt/st-bootstrap.js?style=flat-square">
+![Build](https://img.shields.io/github/v/release/rshelnutt/st-bootstrap?style=flat-square ":no-zoom")
+&nbsp;
+![Build](https://img.shields.io/github/release-date/rshelnutt/st-bootstrap?color=e22171&amp;style=flat-square ":no-zoom")
 </div>
-<div><img src="https://img.shields.io/github/v/release/rshelnutt/st-bootstrap?style=flat-square"><img src="https://img.shields.io/github/release-date/rshelnutt/st-bootstrap?color=e22171&amp;style=flat-square"></div>
-<div><img src="https://img.shields.io/badge/required-speartek%20723+-orange?style=flat-square"></div>
+
+<div>
+![Build](https://img.shields.io/badge/required-speartek%20723+-orange?style=flat-square ":no-zoom")
+</div>
 
 Last Update ({docsify-updated})
 
