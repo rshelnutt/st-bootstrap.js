@@ -151,6 +151,13 @@ Enable the Quick Order view option for Category views.
 
     cfgQuickOrder = "true"
     
+## cfgQuickOrderAccess
+- Type: `array`
+
+If configured, restricts view access of Quick Order to ___only___ the listed Group ID #s. Quick Order will be disabled for all other groups.
+
+    cfgQuickOrderAccess = "6,7"
+    
 ## cfgQuickOrderDefault
 - Type: `boolean`
 - Default: `false`
@@ -165,10 +172,4 @@ Set Quick Order as the default Category view for all categories, _except_ for th
 Comma separated list of Category ID #s to be excluded from the [cfgQuickOrderDefault](#cfgQuickOrderDefault) option. All Category ID #s listed will maintain the grid view as the default.
 
     cfgQuickOrderAltCategory = "1,4,7,14"
-    
-## cfgQuickOrderAccess
-- Type: `array`
 
-If configured, restricts view access of Quick Order to ___only___ the listed Group ID #s. Quick Order will be disabled for all other groups.
-
-    cfgQuickOrderAccess = "6,7"
