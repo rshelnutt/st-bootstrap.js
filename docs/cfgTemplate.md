@@ -36,6 +36,14 @@ Name of the shop. This will be used on select pages and displays.
 
     cfgShopName = "My Awesome Store"
 
+## cfgIconFolder
+- Type: `String`
+- Default Directory: `wwwyourdsn/Content/Images/Icons`
+
+Specify the directory containing your site's favicons. This path is relative to your Content folder as the root directory, ___not___ your DSN.
+
+    cfgIconFolder = "images/store2/favicons"
+
 ## cfgThemeColor
 - Type: `String`
 
