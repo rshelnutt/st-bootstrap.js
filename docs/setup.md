@@ -11,6 +11,6 @@
 - Ionicons 4.3+
 
 ## Installation
-To install, download the [latest distribution](https://github.com/rshelnutt/st-bootstrap/archive/v1.0-athena.zip) and extract all files in the `/dist/` folder into to your DSN's root folder.
+To install, download the [latest distribution](https://github.com/rshelnutt/st-bootstrap.js/releases/latest) and extract all files in the `/dist/` folder into to your DSN's root folder.
 
 After installation, you *must* configure the site settings. See [Configuration](/config.md) section for more details.
