@@ -137,11 +137,11 @@ Show the percentage of discount on products with price breaks in Category view.
 
 Set the display position and type of Filters for Category views.
 
+    cfgFilterDisplay = "sidebar"
+
 - `inline` sets the filters above the content in a collapsible block.
 - `modal` embeds the filters in a bootstrap-enabled popup modal, triggered by a button on the page.
 - `sidebar` positions the filters as a sidebar to the left of the category content.
-
-    cfgFilterDisplay = "sidebar"
     
 ## cfgQuickOrder
 - Type: `Boolean`
