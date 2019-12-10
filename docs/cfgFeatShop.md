@@ -7,7 +7,7 @@
 ## cfgFeaturedShopCat
 - Type: `Integer`
 
-Define the featured shop'ss category ID # to list it's subcategories. 
+Define the featured shop's category ID # to list it's subcategories. 
 
     cfgFeaturedShopCat     = "4"
     

@@ -173,7 +173,7 @@ cfgCheckoutCountryDefault = "US" 'string - Two character country code
 ' Footer Settings
 '---------------------------------------
 cfgFooterLinksPos = "top"
-cfgSocialFooterPos = "bottom"
+cfgSocialFooterPos = "bottom" 'top, bottom, inline, empty for none
 cfgFooterCopy = "All Rights Reserved"
 cfgFooterDelimiter = "&bull;"
 
