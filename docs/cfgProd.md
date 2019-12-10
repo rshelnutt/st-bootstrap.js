@@ -82,7 +82,7 @@ Manually set the prefix for the thumbnails.
 
 Change the AddThis icon styles.
 
-    cfgSocialShareStyle = "rounded"
+    cfgSocialShareStyle = "round"
     
 ## cfgRestrictedMessageShow
 - Type: ``
