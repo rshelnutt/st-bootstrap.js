@@ -72,7 +72,7 @@ Lorem ipsum dolor
 - Type: ``
 - Default: `ct1_`
 
-Manually set the prefix for the thumbnails.
+Manually override the prefix for thumbnails.
 
     cfgThumbPrefix = "mn_"
     
