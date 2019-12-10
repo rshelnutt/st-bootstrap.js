@@ -133,9 +133,9 @@ Lorem ipsum dolor
     cfgQtyInputStyle = "block" 'empty (default), circle, block
     
 ## cfgRelatedTitle
-- Type: ``
-- Default: ``
+- Type: `String`
+- Default: `Related Products`
 
-Lorem ipsum dolor
+Override the default title of the Related Products block.
 
-    cfgRelatedTitle = "block" 'empty (default), circle, block
+    cfgRelatedTitle = "You Might Also Like" 'string
