@@ -10,7 +10,7 @@
 
 Define the display style for the **boot-CategoryImageHeader.asp** block.
 
-    cfgCatBannerDisplay = "true"
+    cfgCatBannerDisplay = "herofull"
 
 ## cfgCatBannerHeight
 - Type: `int`
