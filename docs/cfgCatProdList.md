@@ -60,10 +60,10 @@ Display the breadcrumb bar only on category pages, only on product views, allow 
 
 Set the display of the breadcrumb bar in relation to the content. 
 
+    cfgBreadcrumbPosition = "fullwidth"
+
 - `fullwidth` will stretch the breadcrumb across the entire width of the page, above any side navigation and content.
 - `inline` keeps the breadcrumb bar bound to the width of just the content area.
-
-    cfgBreadcrumbPosition = "fullwidth"
     
 ## cfgBreadcrumbHomeText
 - Type: `String`
