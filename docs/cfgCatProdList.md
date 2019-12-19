@@ -131,6 +131,43 @@ Show the percentage of discount on products with price breaks in Category view.
 
     cfgDiscountPercent = "false"
     
+## cfgCatSwatchShow
+- Type: `Boolean`
+- Default: `false`
+
+Display product swatches in Category view.
+
+    cfgCatSwatchShow = "true"
+    
+## cfgCatSwatchAttrNames
+- Type: `Array`
+
+Comma separated list of attributes to show swatches for.
+
+    cfgCatSwatchAttrNames = "Color,Pattern"
+    
+## cfgCatSwatchType
+- Type: `Array`
+
+Comma separated list of swatch types that match attribute list.
+
+    cfgCatSwatchType = "product,attribute"
+    
+## cfgCatSwatchImgDef
+- Type: `String`
+- Default: `/Attributes/AttrCatSwatch_NoImage.jpg`
+
+Swatch image definition prefix used if swatches are set by "product".
+
+    cfgCatSwatchImgDef = "ct2_"
+    
+## cfgCatSwatchMainImgDef
+- Type: `String`
+
+Main swatch image definition prefix for Product.
+
+    cfgCatSwatchMainImgDef = "mn2_"
+
 ## cfgFilterDisplay
 - Type: `String`
 - Options: `inline`,`modal`,`sidebar`,`[empty for none]`
