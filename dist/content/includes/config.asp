@@ -134,8 +134,19 @@ cfgCatShowBrand = "true"
 cfgCatShowPartLabel = "true"
 cfgProdShortname = "false"
 cfgDiscountPercent = ""
+
+cfgCatSwatchShow = ""
+cfgCatSwatchAttrNames = ""
+cfgCatSwatchType = ""
+cfgCatSwatchImgDef = ""
+cfgCatSwatchMainImgDef = ""
+
 cfgFilterDisplay = "modal" 'string [inline, modal, (empty for none)]
-cfgQuickOrder = ""
+
+cfgQuickOrder = "true"
+cfgQuickOrderAccess = ""
+cfgQuickOrderDefault = ""
+cfgQuickOrderAltCategory = ""
 
 ' Product View
 '---------------------------------------
