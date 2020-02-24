@@ -12,6 +12,20 @@ Google Analytics property number. If this exists, Google Analytics tracking is a
 
     cfgGoogleUA = "UA-000000000-1"
     
+## cfgGoogleAW
+- Type: `String`
+
+Google Ad Words number. If this exists, Google Ad Words is automatically activated on all pages for the Tracking Code supplied.
+
+    cfgGoogleAW = "AW-123456789"
+    
+## cfgGoogleGTM
+- Type: `String`
+
+Google Tag Manager number. If this exists, Google Tag Manager is automatically activated on all pages for the Tracking Code supplied.
+
+    cfgGoogleGTM = "GTM-ABC123Z"
+    
 ## cfgGoogleTransCompletePage
 - Type: `String`
 - Default: `empty`
